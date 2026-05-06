@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixelpusher — We Do Impossible</title>
+  <meta name="description" content="Pixelpusher is a Toronto-based creative studio building campaigns, digital experiences, and brand moments for the world's most ambitious brands." />
+  <style>
+
+  /* ── RESET ───────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* ── VARIABLES ───────────────────────────────────── */
+  :root {
+    --ff:       'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --black:    #0B0B09;
+    --off-white:#F5F0E8;
+    --cream-1:  #F2EDE5;
+    --cream-2:  #E8E3DA;
+    --cream-3:  #DAD4C8;
+    --dark-2:   #1A1917;
+    --pure-w:   #FAFAF8;
+    --clients-bg: #F0EBE2;
+    --mid:      #7A756D;
+    --accent:   #D94E2E;
+    --gutter:   clamp(1.5rem, 5vw, 5rem);
+    --xl:       clamp(6rem, 12vh, 10rem);
+    --hero-fs:  clamp(3rem, 13vw, 10.5rem);
+    --h2-fs:    clamp(2.75rem, 6.5vw, 6.25rem);
+    --label-fs: 0.8125rem;
+  }
+
+  /* ── BASE ────────────────────────────────────────── */
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--ff);
+    background: var(--black);
+    color: var(--off-white);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: none;
+  }
+
+  img { display: block; width: 100%; }
+  a   { text-decoration: none; }
+
+  /* ── CUSTOM CURSOR ───────────────────────────────── */
+  .cursor {
+    position: fixed;
+    top: 0; left: 0;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: white;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition:
+      width  0.38s cubic-bezier(0.16,1,0.3,1),
+      height 0.38s cubic-bezier(0.16,1,0.3,1);
+    mix-blend-mode: difference;
+  }
+  .cursor.big { width: 54px; height: 54px; }
+
+  @media (hover: none) {
+    body { cursor: auto; }
+    .cursor { display: none; }
+  }
+
+  /* ── NAV ──────────────────────────────────────────── */
+  .nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.75rem var(--gutter);
+    mix-blend-mode: difference;
+    color: white;
+    transition: transform 0.55s cubic-bezier(0.16,1,0.3,1);
+  }
+  .nav.hide { transform: translateY(-100%); }
+
+  .nav-logo {
+    font-size: var(--label-fs);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: inherit;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+  }
+  .nav-links a {
+    font-size: var(--label-fs);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: inherit;
+    opacity: 0.55;
+    transition: opacity 0.2s;
+  }
+  .nav-links a:hover { opacity: 1; }
+
+  /* ── HERO ─────────────────────────────────────────── */
+  .hero {
+    min-height: 100vh;
+    min-height: 100svh;
+    background: var(--black);
+    padding: 0 var(--gutter);
+    padding-bottom: clamp(4.5rem, 9vh, 8rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-eyebrow {
+    font-size: var(--label-fs);
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-bottom: 1.75rem;
+    animation: fade-up 0.9s cubic-bezier(0.16,1,0.3,1) 0.2s both;
+  }
+
+  .hero-h1 {
+    font-size: var(--hero-fs);
+    font-weight: 700;
+    line-height: 0.92;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    animation: fade-up 1s cubic-bezier(0.16,1,0.3,1) 0.38s both;
+  }
+
+  .hero-sub {
+    margin-top: clamp(2rem, 3vw, 3rem);
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
+    line-height: 1.65;
+    color: var(--mid);
+    max-width: 40ch;
+    animation: fade-up 1s cubic-bezier(0.16,1,0.3,1) 0.58s both;
+  }
+
+  .hero-scroll {
+    position: absolute;
+    bottom: clamp(2rem, 5vh, 3.5rem);
+    right: var(--gutter);
+    writing-mode: vertical-rl;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mid);
+    opacity: 0.45;
+    animation: fade-in 1.2s ease 1.1s both;
+  }
+
+  .hero-location {
+    position: absolute;
+    bottom: clamp(2rem, 5vh, 3.5rem);
+    left: var(--gutter);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mid);
+    opacity: 0.35;
+    animation: fade-in 1.2s ease 1.1s both;
+  }
+
+  /* ── WORK ─────────────────────────────────────────── */
+  .work {
+    background: var(--black);
+    padding: var(--xl) var(--gutter);
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.75rem;
+  }
+  .section-header-title {
+    font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .section-header-link {
+    font-size: var(--label-fs);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--mid);
+    transition: color 0.22s;
+  }
+  .section-header-link:hover { color: var(--off-white); }
+
+  .work-intro {
+    font-size: clamp(1rem, 1.25vw, 1.1rem);
+    color: var(--mid);
+    max-width: 52ch;
+    line-height: 1.6;
+    margin-bottom: clamp(2.5rem, 4vw, 4rem);
+  }
+
+  .work-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+  }
+
+  .work-item {
+    position: relative;
+    overflow: hidden;
+    background: #111;
+    aspect-ratio: 4 / 3;
+  }
+  .work-item--wide {
+    grid-column: span 2;
+    aspect-ratio: 21 / 9;
+  }
+
+  .work-item img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition:
+      transform 1s cubic-bezier(0.16,1,0.3,1),
+      filter    0.6s ease;
+    filter: brightness(0.62) saturate(0.75);
+  }
+  .work-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.82) saturate(1);
+  }
+
+  .work-caption {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 1.75rem 2rem 1.75rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.6));
+  }
+  .work-client {
+    font-size: 0.68rem;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 0.3rem;
+  }
+  .work-title {
+    font-size: clamp(1rem, 2vw, 1.65rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: white;
+  }
+  .work-cta {
+    position: absolute;
+    top: 1.75rem; right: 2rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  .work-item:hover .work-cta { opacity: 1; transform: none; }
+
+  /* ── SERVICES ─────────────────────────────────────── */
+  .service {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    align-items: center;
+    padding: var(--xl) var(--gutter);
+    column-gap: clamp(3rem, 7vw, 9rem);
+    row-gap: 3rem;
+  }
+
+  .service-num {
+    font-size: var(--label-fs);
+    letter-spacing: 0.13em;
+    color: var(--mid);
+    margin-bottom: 1.25rem;
+  }
+
+  .service-title {
+    font-size: var(--h2-fs);
+    font-weight: 700;
+    line-height: 0.92;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+  }
+
+  .service-copy {
+    font-size: clamp(1rem, 1.3vw, 1.15rem);
+    line-height: 1.72;
+    margin-bottom: 2.5rem;
+    max-width: 44ch;
+  }
+
+  .caps {
+    list-style: none;
+    border-top: 1px solid currentColor;
+  }
+  .caps li {
+    font-size: 0.875rem;
+    letter-spacing: 0.02em;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid currentColor;
+    opacity: 0.38;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity 0.22s;
+  }
+  .caps li:hover { opacity: 0.9; cursor: default; }
+  .caps li::after { content: '→'; font-size: 0.75rem; opacity: 0.7; }
+
+  .service--cream  { background: var(--cream-1); color: var(--dark-2); }
+  .service--ecru   { background: var(--cream-2); color: var(--dark-2); }
+  .service--warm   { background: var(--cream-3); color: var(--dark-2); }
+  .service--charcoal { background: var(--dark-2); color: var(--off-white); }
+
+  /* ── ABOUT ────────────────────────────────────────── */
+  .about {
+    min-height: 100vh;
+    min-height: 100svh;
+    background: var(--pure-w);
+    color: var(--dark-2);
+    padding: var(--xl) var(--gutter);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-h2 {
+    font-size: var(--h2-fs);
+    font-weight: 700;
+    line-height: 0.92;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    max-width: 14ch;
+    margin-bottom: clamp(3rem, 5vh, 5rem);
+  }
+
+  .about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-bottom: clamp(3rem, 5vh, 4.5rem);
+    margin-bottom: clamp(3rem, 5vh, 4.5rem);
+    border-bottom: 1px solid rgba(26,25,23,0.12);
+  }
+
+  .stat-n {
+    font-size: clamp(3.5rem, 6vw, 5.5rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    margin-bottom: 0.6rem;
+  }
+  .stat-l {
+    font-size: var(--label-fs);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--mid);
+  }
+
+  .about-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gutter);
+  }
+
+  .about-p {
+    font-size: clamp(1rem, 1.25vw, 1.1rem);
+    line-height: 1.78;
+    color: #454039;
+    max-width: 46ch;
+  }
+
+  /* ── CLIENTS MARQUEE ─────────────────────────────── */
+  .clients {
+    background: var(--clients-bg);
+    color: var(--dark-2);
+    padding: 5rem 0;
+    overflow: hidden;
+  }
+  .clients-label {
+    font-size: var(--label-fs);
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin: 0 var(--gutter) 2.25rem;
+  }
+  .marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 32s linear infinite;
+  }
+  .marquee:hover { animation-play-state: paused; }
+  .marquee-name {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    text-transform: uppercase;
+    padding: 0 2.5rem;
+    white-space: nowrap;
+    opacity: 0.28;
+    transition: opacity 0.25s;
+    cursor: default;
+  }
+  .marquee-name:hover { opacity: 1; }
+  .marquee-sep {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    color: var(--mid);
+    opacity: 0.2;
+    align-self: center;
+    line-height: 1;
+  }
+
+  /* ── CONTACT ──────────────────────────────────────── */
+  .contact {
+    min-height: 100vh;
+    min-height: 100svh;
+    background: var(--black);
+    color: var(--off-white);
+    padding: var(--xl) var(--gutter);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-label {
+    font-size: var(--label-fs);
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-bottom: 1.75rem;
+  }
+  .contact-h2 {
+    font-size: var(--h2-fs);
+    font-weight: 700;
+    line-height: 0.92;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    max-width: 14ch;
+    margin-bottom: 2.5rem;
+  }
+  .contact-sub {
+    font-size: clamp(1rem, 1.3vw, 1.15rem);
+    color: var(--mid);
+    max-width: 44ch;
+    line-height: 1.65;
+    margin-bottom: 3rem;
+  }
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--ff);
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--black);
+    background: var(--off-white);
+    padding: 1.15rem 2.5rem;
+    border: none;
+    align-self: flex-start;
+    transition: background 0.25s, color 0.25s;
+    cursor: none;
+  }
+  .contact-btn:hover { background: var(--accent); color: white; }
+
+  /* ── FOOTER ───────────────────────────────────────── */
+  footer {
+    background: var(--black);
+    border-top: 1px solid rgba(245,240,232,0.07);
+    padding: 2rem var(--gutter);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--label-fs);
+    color: var(--mid);
+  }
+  footer a { color: inherit; transition: color 0.2s; }
+  footer a:hover { color: var(--off-white); }
+  .footer-nav { list-style: none; display: flex; gap: 2.5rem; }
+
+  /* ── SCROLL REVEAL ────────────────────────────────── */
+  .r {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition:
+      opacity   0.95s cubic-bezier(0.16,1,0.3,1),
+      transform 0.95s cubic-bezier(0.16,1,0.3,1);
+  }
+  .r.in { opacity: 1; transform: none; }
+  .r.d1 { transition-delay: 0.1s;  }
+  .r.d2 { transition-delay: 0.22s; }
+  .r.d3 { transition-delay: 0.38s; }
+  .r.d4 { transition-delay: 0.55s; }
+
+  /* ── KEYFRAMES ────────────────────────────────────── */
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(2.25rem); }
+    to   { opacity: 1; transform: none; }
+  }
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to   { opacity: 0.45; }
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  /* ── RESPONSIVE ───────────────────────────────────── */
+  @media (max-width: 800px) {
+    .nav-links { display: none; }
+    .work-grid { grid-template-columns: 1fr; }
+    .work-item--wide { grid-column: span 1; aspect-ratio: 4 / 3; }
+    .service { grid-template-columns: 1fr; padding-top: 6rem; }
+    .about-stats { grid-template-columns: 1fr 1fr; }
+    .about-body  { grid-template-columns: 1fr; }
+    .footer-nav  { display: none; }
+  }
+
+  </style>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cur"></div>
+
+<!-- ── NAV ─────────────────────────────────────────── -->
+<nav class="nav" id="nav">
+  <a href="#" class="nav-logo">Pixelpusher</a>
+  <ul class="nav-links">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ────────────────────────────────────────── -->
+<section class="hero" id="hero">
+  <p class="hero-eyebrow">Creative Studio — Toronto</p>
+  <h1 class="hero-h1">We Do<br>Impossible</h1>
+  <p class="hero-sub">Twenty-five years of campaigns, digital experiences, and brand moments that changed how people feel about the brands they love.</p>
+  <span class="hero-location">Est. 1999</span>
+  <span class="hero-scroll">Scroll to explore</span>
+</section>
+
+<!-- ── SELECTED WORK ────────────────────────────────── -->
+<section class="work" id="work">
+  <div class="section-header r">
+    <span class="section-header-title">Selected Work</span>
+    <a href="#" class="section-header-link">All Projects →</a>
+  </div>
+  <p class="work-intro r d1">Ambitious briefs. Impossible results. A curated look at work that moved culture for the world's biggest brands.</p>
+
+  <div class="work-grid">
+
+    <div class="work-item work-item--wide r">
+      <img src="https://picsum.photos/seed/colgate-pp/1600/686" alt="Colgate — Totally Honest" loading="eager" />
+      <div class="work-caption">
+        <p class="work-client">Colgate</p>
+        <p class="work-title">Totally Honest</p>
+      </div>
+      <span class="work-cta">View →</span>
+    </div>
+
+    <div class="work-item r d1">
+      <img src="https://picsum.photos/seed/cadillac-pp/900/675" alt="Cadillac — Be Iconic" loading="lazy" />
+      <div class="work-caption">
+        <p class="work-client">Cadillac</p>
+        <p class="work-title">Be Iconic</p>
+      </div>
+      <span class="work-cta">View →</span>
+    </div>
+
+    <div class="work-item r d2">
+      <img src="https://picsum.photos/seed/gatorade-pp/900/675" alt="Gatorade — Sweat Machine" loading="lazy" />
+      <div class="work-caption">
+        <p class="work-client">Gatorade</p>
+        <p class="work-title">Sweat Machine</p>
+      </div>
+      <span class="work-cta">View →</span>
+    </div>
+
+    <div class="work-item r d1">
+      <img src="https://picsum.photos/seed/adidas-pp/900/675" alt="Adidas — ComplexCon" loading="lazy" />
+      <div class="work-caption">
+        <p class="work-client">Adidas</p>
+        <p class="work-title">ComplexCon</p>
+      </div>
+      <span class="work-cta">View →</span>
+    </div>
+
+    <div class="work-item r d2">
+      <img src="https://picsum.photos/seed/ford-pp/900/675" alt="Ford — Go Further" loading="lazy" />
+      <div class="work-caption">
+        <p class="work-client">Ford</p>
+        <p class="work-title">Go Further</p>
+      </div>
+      <span class="work-cta">View →</span>
+    </div>
+
+    <div class="work-item work-item--wide r">
+      <img src="https://picsum.photos/seed/shiseido-pp/1600/686" alt="Shiseido — Nuit Blanche" loading="lazy" />
+      <div class="work-caption">
+        <p class="work-client">Shiseido</p>
+        <p class="work-title">Nuit Blanche</p>
+      </div>
+      <span class="work-cta">View →</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── SERVICE 01 — BRAND & CAMPAIGN ────────────────── -->
+<section class="service service--cream" id="services">
+  <div>
+    <p class="service-num r">01</p>
+    <h2 class="service-title r d1">Brand &amp;<br>Campaign</h2>
+  </div>
+  <div class="r d2">
+    <p class="service-copy">We build brands worth believing in. From identity systems to fully integrated campaigns, we craft the kinds of stories that earn attention, hold it, and make people feel something they didn't expect to feel.</p>
+    <ul class="caps">
+      <li>Brand Identity &amp; Systems</li>
+      <li>Campaign Development</li>
+      <li>Creative Strategy</li>
+      <li>Art Direction</li>
+      <li>Copywriting</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── SERVICE 02 — DIGITAL EXPERIENCE ──────────────── -->
+<section class="service service--ecru">
+  <div>
+    <p class="service-num r">02</p>
+    <h2 class="service-title r d1">Digital<br>Experience</h2>
+  </div>
+  <div class="r d2">
+    <p class="service-copy">Websites, apps, and interactive moments built with obsessive attention to detail. Digital isn't a checklist — it's the most direct relationship a brand has with the people who matter most to them.</p>
+    <ul class="caps">
+      <li>Web Design &amp; Development</li>
+      <li>Interactive Experiences</li>
+      <li>UX &amp; Product Design</li>
+      <li>Motion &amp; Animation</li>
+      <li>Technical Production</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── SERVICE 03 — SOCIAL & CONTENT ────────────────── -->
+<section class="service service--warm">
+  <div>
+    <p class="service-num r">03</p>
+    <h2 class="service-title r d1">Social &amp;<br>Content</h2>
+  </div>
+  <div class="r d2">
+    <p class="service-copy">Content that earns its place in the feed. We create at the speed of culture — producing work that doesn't interrupt the moment, it becomes it. Scroll-stopping by design, never by accident.</p>
+    <ul class="caps">
+      <li>Social Strategy</li>
+      <li>Content Production</li>
+      <li>Influencer &amp; Creator Programs</li>
+      <li>Community Management</li>
+      <li>Paid Social</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── SERVICE 04 — STRATEGY ────────────────────────── -->
+<section class="service service--charcoal">
+  <div>
+    <p class="service-num r">04</p>
+    <h2 class="service-title r d1">Strategy</h2>
+  </div>
+  <div class="r d2">
+    <p class="service-copy">Before the first pixel, the thinking. We diagnose what's broken, uncover what's possible, and map the shortest path between where you are and where you need to be. Strategy isn't a preamble — it's the work.</p>
+    <ul class="caps">
+      <li>Brand Positioning</li>
+      <li>Audience Insights &amp; Research</li>
+      <li>Market Intelligence</li>
+      <li>Campaign Planning</li>
+      <li>Analytics &amp; Optimization</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── ABOUT ────────────────────────────────────────── -->
+<section class="about" id="about">
+  <h2 class="about-h2 r">Impossible<br>is our<br>brief.</h2>
+
+  <div class="about-stats">
+    <div>
+      <p class="stat-n r" data-count="25" data-suffix="+">0</p>
+      <p class="stat-l">Years of doing impossible</p>
+    </div>
+    <div>
+      <p class="stat-n r d1" data-count="200" data-suffix="+">0</p>
+      <p class="stat-l">Campaigns launched worldwide</p>
+    </div>
+    <div>
+      <p class="stat-n r d2" data-count="47">0</p>
+      <p class="stat-l">Industry awards</p>
+    </div>
+  </div>
+
+  <div class="about-body">
+    <p class="about-p r">Pixelpusher is a Toronto-based creative studio that has spent over two decades proving that the best ideas are the ones nobody thought could work. We are relentless in the pursuit of work that matters — work that changes how people feel about a brand, a product, or an idea.</p>
+    <p class="about-p r d1">We've partnered with Colgate, Cadillac, Gatorade, Adidas, Ford, and Shiseido, among many others. The briefs were ambitious. The results were things nobody had seen before. That's not a coincidence — that's the standard we set for every project we take on.</p>
+  </div>
+</section>
+
+<!-- ── CLIENTS MARQUEE ───────────────────────────────── -->
+<section class="clients">
+  <p class="clients-label">Our Clients</p>
+  <div class="marquee">
+    <span class="marquee-name">Colgate</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Cadillac</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Gatorade</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Adidas</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Ford</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Shiseido</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">D'Italiano</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Sport Chek</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Volkswagen</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Rick Hansen Foundation</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Michael Hill</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">MiO</span><span class="marquee-sep">—</span>
+    <!-- duplicate for seamless loop -->
+    <span class="marquee-name">Colgate</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Cadillac</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Gatorade</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Adidas</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Ford</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Shiseido</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">D'Italiano</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Sport Chek</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Volkswagen</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Rick Hansen Foundation</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">Michael Hill</span><span class="marquee-sep">—</span>
+    <span class="marquee-name">MiO</span><span class="marquee-sep">—</span>
+  </div>
+</section>
+
+<!-- ── CONTACT ───────────────────────────────────────── -->
+<section class="contact" id="contact">
+  <p class="contact-label r">Get in Touch</p>
+  <h2 class="contact-h2 r d1">Ready to do<br>impossible?</h2>
+  <p class="contact-sub r d2">Let's build something nobody's ever seen before. Tell us about your brief — the more impossible it sounds, the more interested we are.</p>
+  <a href="mailto:hello@pixelpusher.ca" class="contact-btn r d3">Start a Project →</a>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────────── -->
+<footer>
+  <span>© 2025 Pixelpusher Inc. — Toronto, Canada</span>
+  <ul class="footer-nav">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</footer>
+
+<script>
+// ── CUSTOM CURSOR ─────────────────────────────────────
+const cur = document.getElementById('cur');
+let mx = -200, my = -200, cx = -200, cy = -200;
+
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+
+(function loop() {
+  cx += (mx - cx) * 0.16;
+  cy += (my - cy) * 0.16;
+  cur.style.left = cx + 'px';
+  cur.style.top  = cy + 'px';
+  requestAnimationFrame(loop);
+})();
+
+document.querySelectorAll('a, .work-item, .caps li').forEach(el => {
+  el.addEventListener('mouseenter', () => cur.classList.add('big'));
+  el.addEventListener('mouseleave', () => cur.classList.remove('big'));
+});
+
+// ── SCROLL REVEAL & COUNT-UP ──────────────────────────
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('in');
+    const n = entry.target.dataset.count;
+    if (n) countUp(entry.target, +n, entry.target.dataset.suffix || '');
+    obs.unobserve(entry.target);
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.r').forEach(el => obs.observe(el));
+
+function countUp(el, target, suffix) {
+  const t0 = performance.now(), dur = 1800;
+  (function tick(now) {
+    const p = Math.min((now - t0) / dur, 1);
+    const e = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.floor(e * target) + suffix;
+    if (p < 1) requestAnimationFrame(tick);
+  })(t0);
+}
+
+// ── NAV HIDE ON SCROLL DOWN ───────────────────────────
+let prevY = 0;
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  nav.classList.toggle('hide', y > prevY && y > 140);
+  prevY = y;
+}, { passive: true });
+</script>
+
+</body>
+</html>
