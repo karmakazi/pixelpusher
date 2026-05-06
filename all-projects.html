@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Projects — Pixelpusher</title>
+  <meta name="description" content="Every campaign, digital experience, and brand moment Pixelpusher has created over 25 years." />
+  <style>
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ff:       'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --black:    #0B0B09;
+    --off-white:#F5F0E8;
+    --cream-1:  #F2EDE5;
+    --cream-3:  #DAD4C8;
+    --dark-2:   #1A1917;
+    --mid:      #7A756D;
+    --accent:   #D94E2E;
+    --gutter:   clamp(1.5rem, 5vw, 5rem);
+    --xl:       clamp(6rem, 12vh, 10rem);
+    --label-fs: 0.8125rem;
+    --h2-fs:    clamp(2.75rem, 6.5vw, 6.25rem);
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--ff);
+    background: var(--black);
+    color: var(--off-white);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    cursor: none;
+  }
+  img { display: block; width: 100%; }
+  a   { text-decoration: none; }
+
+  /* CURSOR */
+  .cursor {
+    position: fixed; top: 0; left: 0;
+    width: 10px; height: 10px;
+    border-radius: 50%; background: white;
+    pointer-events: none; z-index: 9999;
+    transform: translate(-50%,-50%);
+    transition: width .38s cubic-bezier(.16,1,.3,1), height .38s cubic-bezier(.16,1,.3,1);
+    mix-blend-mode: difference;
+  }
+  .cursor.big { width: 54px; height: 54px; }
+  @media (hover: none) { body { cursor: auto; } .cursor { display: none; } }
+
+  /* NAV */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.75rem var(--gutter);
+    mix-blend-mode: difference; color: white;
+    transition: transform .55s cubic-bezier(.16,1,.3,1);
+  }
+  .nav.hide { transform: translateY(-100%); }
+  .nav-logo { font-size: var(--label-fs); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: inherit; }
+  .nav-links { list-style: none; display: flex; gap: 2.5rem; }
+  .nav-links a { font-size: var(--label-fs); letter-spacing: .08em; text-transform: uppercase; color: inherit; opacity: .55; transition: opacity .2s; }
+  .nav-links a:hover { opacity: 1; }
+
+  /* HERO */
+  .hero {
+    min-height: 60vh;
+    background: var(--black);
+    padding: 0 var(--gutter);
+    padding-bottom: clamp(4rem, 8vh, 7rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .hero-eyebrow {
+    font-size: var(--label-fs);
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-bottom: 1.75rem;
+    animation: fade-up .9s cubic-bezier(.16,1,.3,1) .2s both;
+  }
+  .hero-h1 {
+    font-size: var(--h2-fs);
+    font-weight: 700;
+    line-height: .92;
+    letter-spacing: -.035em;
+    text-transform: uppercase;
+    animation: fade-up 1s cubic-bezier(.16,1,.3,1) .38s both;
+  }
+  .hero-sub {
+    margin-top: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-size: clamp(1rem, 1.3vw, 1.15rem);
+    line-height: 1.65;
+    color: var(--mid);
+    max-width: 44ch;
+    animation: fade-up 1s cubic-bezier(.16,1,.3,1) .55s both;
+  }
+
+  /* PROJECT LIST */
+  .projects {
+    background: var(--black);
+    padding: 0 var(--gutter);
+    padding-bottom: var(--xl);
+    border-top: 1px solid rgba(245,240,232,.08);
+  }
+
+  .projects-list { list-style: none; }
+
+  .project-row {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr 2fr 1fr 1.5rem;
+    gap: 0 clamp(1rem, 3vw, 3rem);
+    align-items: center;
+    padding: 1.6rem 0;
+    border-bottom: 1px solid rgba(245,240,232,.07);
+    transition: background .2s;
+  }
+  .project-row--linked {
+    cursor: none;
+  }
+  .project-row--linked:hover {
+    background: rgba(245,240,232,.03);
+    margin: 0 calc(-1 * var(--gutter));
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+  .project-row--locked {
+    opacity: .28;
+  }
+
+  .project-num {
+    font-size: var(--label-fs);
+    color: var(--mid);
+    letter-spacing: .08em;
+    line-height: 1;
+  }
+  .project-client {
+    font-size: var(--label-fs);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--mid);
+  }
+  .project-name {
+    font-size: clamp(.95rem, 1.8vw, 1.45rem);
+    font-weight: 700;
+    letter-spacing: -.02em;
+    line-height: 1.1;
+    color: var(--off-white);
+  }
+  .project-row--linked:hover .project-name { color: white; }
+
+  .project-type {
+    font-size: var(--label-fs);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--mid);
+  }
+  .project-arrow {
+    font-size: .85rem;
+    color: var(--mid);
+    opacity: 0;
+    transition: opacity .25s, transform .25s;
+    transform: translateX(-4px);
+    justify-self: end;
+  }
+  .project-row--linked:hover .project-arrow {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--black);
+    border-top: 1px solid rgba(245,240,232,.07);
+    padding: 2rem var(--gutter);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--label-fs);
+    color: var(--mid);
+  }
+  footer a { color: inherit; transition: color .2s; }
+  footer a:hover { color: var(--off-white); }
+  .footer-nav { list-style: none; display: flex; gap: 2.5rem; }
+
+  /* SCROLL REVEAL */
+  .r { opacity: 0; transform: translateY(2rem); transition: opacity .95s cubic-bezier(.16,1,.3,1), transform .95s cubic-bezier(.16,1,.3,1); }
+  .r.in { opacity: 1; transform: none; }
+  .r.d1 { transition-delay: .05s; }
+  .r.d2 { transition-delay: .1s; }
+  .r.d3 { transition-delay: .15s; }
+  .r.d4 { transition-delay: .2s; }
+
+  @keyframes fade-up { from { opacity: 0; transform: translateY(2.25rem); } to { opacity: 1; transform: none; } }
+
+  @media (max-width: 800px) {
+    .nav-links { display: none; }
+    .project-row {
+      grid-template-columns: 2rem 1fr auto;
+      grid-template-rows: auto auto;
+      row-gap: .3rem;
+    }
+    .project-client { grid-column: 2; grid-row: 1; }
+    .project-name   { grid-column: 2; grid-row: 2; }
+    .project-type   { display: none; }
+    .project-arrow  { grid-column: 3; grid-row: 1 / 3; align-self: center; }
+    .footer-nav { display: none; }
+  }
+
+  </style>
+</head>
+<body>
+
+<div class="cursor" id="cur"></div>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">Pixelpusher</a>
+  <ul class="nav-links">
+    <li><a href="index.html#work">Work</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <p class="hero-eyebrow">Pixelpusher — All Projects</p>
+  <h1 class="hero-h1">Every<br>Impossible<br>Thing We've Done</h1>
+  <p class="hero-sub">25 years of campaigns, digital experiences, and brand moments that changed how people feel about the brands they love.</p>
+</section>
+
+<div class="projects">
+  <ul class="projects-list">
+
+    <li>
+      <a href="work/colgate-totally-honest.html" class="project-row project-row--linked r">
+        <span class="project-num">01</span>
+        <span class="project-client">Colgate</span>
+        <span class="project-name">Totally Honest</span>
+        <span class="project-type">Experiential</span>
+        <span class="project-arrow">→</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="work/cadillac-be-iconic.html" class="project-row project-row--linked r d1">
+        <span class="project-num">02</span>
+        <span class="project-client">Cadillac</span>
+        <span class="project-name">Be Iconic</span>
+        <span class="project-type">Digital + Experiential</span>
+        <span class="project-arrow">→</span>
+      </a>
+    </li>
+
+    <li>
+      <div class="project-row project-row--locked r d2">
+        <span class="project-num">03</span>
+        <span class="project-client">9/12</span>
+        <span class="project-name">Reconnecting New York</span>
+        <span class="project-type">Digital + Social</span>
+        <span class="project-arrow">→</span>
+      </div>
+    </li>
+
+    <li>
+      <div class="project-row project-row--locked r d3">
+        <span class="project-num">04</span>
+        <span class="project-client">Pixelpusher</span>
+        <span class="project-name">Recent Web Sites</span>
+        <span class="project-type">Web</span>
+        <span class="project-arrow">→</span>
+      </div>
+    </li>
+
+    <li>
+      <div class="project-row project-row--locked r d4">
+        <span class="project-num">05</span>
+        <span class="project-client">Bedtime Stories</span>
+        <span class="project-name">Social Change</span>
+        <span class="project-type">Digital + Social</span>
+        <span class="project-arrow">→</span>
+      </div>
+    </li>
+
+    <li>
+      <div class="project-row project-row--locked r">
+        <span class="project-num">06</span>
+        <span class="project-client">Rick Hansen Foundation</span>
+        <span class="project-name">Poster for Everyone</span>
+        <span class="project-type">Campaign + OOH</span>
+        <span class="project-arrow">→</span>
+      </div>
+    </li>
+
+    <li>
+      <a href="work/gatorade-sweat-machine.html" class="project-row project-row--linked r d1">
+        <span class="project-num">07</span>
+        <span class="project-client">Gatorade</span>
+        <span class="project-name">Sweat Machine</span>
+        <span class="project-type">Experiential + Digital</span>
+        <span class="project-arrow">→</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="work/adidas-complexcon.html" class="project-row project-row--linked r d2">
+        <span class="project-num">08</span>
+        <span class="project-client">Adidas</span>
+        <span class="project-name">ComplexCon</span>
+        <span class="project-type">Experiential</span>
+        <span class="project-arrow">→</span>
+      </a>
+    </li>
+
+    <li>
+      <div class="project-row project-row--locked r d3">
+        <span class="project-num">09</span>
+        <span class="project-client">Cadillac</span>
+        <span class="project-name">Cadillac XT4</span>
+        <span class="project-type">Campaign + Digital</span>
+        <span class="project-arrow">→</span>
+      </div>
+    </li>
+
+    <li>
+      <a href="work/shiseido-nuit-blanche.html" class="project-row project-row--linked r d4">
+        <span class="project-num">10</span>
+        <span class="project-client">Shiseido</span>
+        <span class="project-name">Nuit Blanche</span>
+        <span class="project-type">Experiential</span>
+        <span class="project-arrow">→</span>
+      </a>
+    </li>
+
+    <li>
+      <div class="project-row project-row--locked r">
+        <span class="project-num">11</span>
+        <span class="project-client">D'Italiano</span>
+        <span class="project-name">Tenor Takeover</span>
+        <span class="project-type">Campaign + Social</span>
+        <span class="project-arrow">→</span>
+      </div>
+    </li>
+
+    <li>
+      <div class="project-row project-row--locked r d1">
+        <span class="project-num">12</span>
+        <span class="project-client">Sport Chek</span>
+        <span class="project-name">Chase The Gear</span>
+        <span class="project-type">Campaign + Digital</span>
+        <span class="project-arrow">→</span>
+      </div>
+    </li>
+
+    <li>
+      <a href="work/ford-go-further.html" class="project-row project-row--linked r d2">
+        <span class="project-num">13</span>
+        <span class="project-client">Ford</span>
+        <span class="project-name">Go Further</span>
+        <span class="project-type">Campaign</span>
+        <span class="project-arrow">→</span>
+      </a>
+    </li>
+
+    <li>
+      <div class="project-row project-row--locked r d3">
+        <span class="project-num">14</span>
+        <span class="project-client">MiO</span>
+        <span class="project-name">MiO POV</span>
+        <span class="project-type">Campaign + Social</span>
+        <span class="project-arrow">→</span>
+      </div>
+    </li>
+
+    <li>
+      <div class="project-row project-row--locked r d4">
+        <span class="project-num">15</span>
+        <span class="project-client">Michael Hill</span>
+        <span class="project-name">Bachelor Experience</span>
+        <span class="project-type">Experiential</span>
+        <span class="project-arrow">→</span>
+      </div>
+    </li>
+
+    <li>
+      <div class="project-row project-row--locked r">
+        <span class="project-num">16</span>
+        <span class="project-client">Volkswagen</span>
+        <span class="project-name">Augmented Reality</span>
+        <span class="project-type">Digital + AR</span>
+        <span class="project-arrow">→</span>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
+<footer>
+  <span>© 2025 Pixelpusher Inc. — Toronto, Canada</span>
+  <ul class="footer-nav">
+    <li><a href="index.html#work">Work</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</footer>
+
+<script>
+const cur = document.getElementById('cur');
+let mx = -200, my = -200, cx = -200, cy = -200;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+(function loop() { cx += (mx-cx)*.16; cy += (my-cy)*.16; cur.style.left = cx+'px'; cur.style.top = cy+'px'; requestAnimationFrame(loop); })();
+document.querySelectorAll('a, .project-row--linked').forEach(el => {
+  el.addEventListener('mouseenter', () => cur.classList.add('big'));
+  el.addEventListener('mouseleave', () => cur.classList.remove('big'));
+});
+
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (!e.isIntersecting) return; e.target.classList.add('in'); obs.unobserve(e.target); });
+}, { threshold: .08 });
+document.querySelectorAll('.r').forEach(el => obs.observe(el));
+
+let prevY = 0;
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => { const y = window.scrollY; nav.classList.toggle('hide', y > prevY && y > 140); prevY = y; }, { passive: true });
+</script>
+
+</body>
+</html>
