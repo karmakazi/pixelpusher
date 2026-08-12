@@ -93,10 +93,9 @@ a   { text-decoration: none; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: inherit;
-  opacity: 0.55;
   transition: opacity 0.2s;
 }
-.nav-links a:hover { opacity: 1; }
+.nav-links a:hover { opacity: 0.5; }
 
 /* ── HERO — HOMEPAGE (full height) ───────────────────── */
 .hero {
@@ -581,7 +580,7 @@ footer a:hover { color: var(--off-white); }
   font-size: var(--label-fs);
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  color: var(--mid);
+  color: rgba(255,255,255,0.6);
   margin-bottom: 1.75rem;
   animation: fade-up 0.9s cubic-bezier(0.16,1,0.3,1) 0.2s both;
 }
@@ -597,7 +596,7 @@ footer a:hover { color: var(--off-white); }
   margin-top: clamp(1.5rem, 2.5vw, 2.5rem);
   font-size: clamp(1rem, 1.4vw, 1.2rem);
   line-height: 1.65;
-  color: var(--mid);
+  color: rgba(255,255,255,0.6);
   max-width: 50ch;
   animation: fade-up 1s cubic-bezier(0.16,1,0.3,1) 0.58s both;
 }
@@ -608,7 +607,7 @@ footer a:hover { color: var(--off-white); }
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--mid);
+  color: rgba(255,255,255,0.6);
   opacity: 0.35;
   animation: fade-in 1.2s ease 1.1s both;
 }

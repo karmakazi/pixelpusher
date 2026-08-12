@@ -222,16 +222,16 @@ function renderHome() {
     <section class="service service--cream" id="services">
       <div>
         <p class="service-num r">01</p>
-        <h2 class="service-title r d1">Brand &amp;<br>Campaign</h2>
+        <h2 class="service-title r d1">User<br>Experience</h2>
       </div>
       <div class="r d2">
-        <p class="service-copy">We build brands worth believing in. From identity systems to fully integrated campaigns, we craft the kinds of stories that earn attention, hold it, and make people feel something they didn\u2019t expect to feel.</p>
+        <p class="service-copy">We design digital products people actually want to use. From the first interaction to the last, we map every moment of friction, every point of delight, and build experiences that feel inevitable \u2014 like they couldn\u2019t have been made any other way.</p>
         <ul class="caps">
-          <li>Brand Identity &amp; Systems</li>
-          <li>Campaign Development</li>
-          <li>Creative Strategy</li>
-          <li>Art Direction</li>
-          <li>Copywriting</li>
+          <li>UX Research &amp; Strategy</li>
+          <li>Information Architecture</li>
+          <li>Interaction Design</li>
+          <li>Prototyping &amp; Testing</li>
+          <li>Design Systems</li>
         </ul>
       </div>
     </section>
@@ -239,16 +239,16 @@ function renderHome() {
     <section class="service service--ecru">
       <div>
         <p class="service-num r">02</p>
-        <h2 class="service-title r d1">Digital<br>Experience</h2>
+        <h2 class="service-title r d1">Development</h2>
       </div>
       <div class="r d2">
-        <p class="service-copy">Websites, apps, and interactive moments built with obsessive attention to detail. Digital isn\u2019t a checklist \u2014 it\u2019s the most direct relationship a brand has with the people who matter most to them.</p>
+        <p class="service-copy">Code is craft. We build what others say can\u2019t be built \u2014 performant, accessible, and obsessively detailed. Whether it\u2019s a marketing site or a custom interactive platform, we write the kind of code that holds up five years from now.</p>
         <ul class="caps">
-          <li>Web Design &amp; Development</li>
-          <li>Interactive Experiences</li>
-          <li>UX &amp; Product Design</li>
-          <li>Motion &amp; Animation</li>
-          <li>Technical Production</li>
+          <li>Web &amp; Application Development</li>
+          <li>Custom CMS Integration</li>
+          <li>API &amp; Backend Engineering</li>
+          <li>Performance Optimization</li>
+          <li>QA &amp; Launch Support</li>
         </ul>
       </div>
     </section>
@@ -256,16 +256,16 @@ function renderHome() {
     <section class="service service--warm">
       <div>
         <p class="service-num r">03</p>
-        <h2 class="service-title r d1">Social &amp;<br>Content</h2>
+        <h2 class="service-title r d1">Digital<br>Activations</h2>
       </div>
       <div class="r d2">
-        <p class="service-copy">Content that earns its place in the feed. We create at the speed of culture \u2014 producing work that doesn\u2019t interrupt the moment, it becomes it. Scroll-stopping by design, never by accident.</p>
+        <p class="service-copy">The best brand moments don\u2019t live on a screen \u2014 they happen in the world and get shared everywhere else. We design physical-digital experiences that put people inside the story, from concept through build to the last social post.</p>
         <ul class="caps">
-          <li>Social Strategy</li>
-          <li>Content Production</li>
-          <li>Influencer &amp; Creator Programs</li>
-          <li>Community Management</li>
-          <li>Paid Social</li>
+          <li>Experiential Concept &amp; Design</li>
+          <li>Interactive Installations</li>
+          <li>Event Technology</li>
+          <li>Content Capture &amp; Distribution</li>
+          <li>Live Production Support</li>
         </ul>
       </div>
     </section>
@@ -273,16 +273,15 @@ function renderHome() {
     <section class="service service--charcoal">
       <div>
         <p class="service-num r">04</p>
-        <h2 class="service-title r d1">Strategy</h2>
+        <h2 class="service-title r d1">Artificial<br>Intelligence</h2>
       </div>
       <div class="r d2">
-        <p class="service-copy">Before the first pixel, the thinking. We diagnose what\u2019s broken, uncover what\u2019s possible, and map the shortest path between where you are and where you need to be. Strategy isn\u2019t a preamble \u2014 it\u2019s the work.</p>
+        <p class="service-copy">AI isn\u2019t a trend we\u2019re chasing \u2014 it\u2019s a tool we\u2019ve been building with. We use it to accelerate creative, personalize experiences at scale, and solve problems that used to require ten times the budget and twice the time.</p>
         <ul class="caps">
-          <li>Brand Positioning</li>
-          <li>Audience Insights &amp; Research</li>
-          <li>Market Intelligence</li>
-          <li>Campaign Planning</li>
-          <li>Analytics &amp; Optimization</li>
+          <li>Generative Creative Production</li>
+          <li>AI-Powered Personalization</li>
+          <li>Conversational Interfaces</li>
+          <li>Workflow Automation</li>
         </ul>
       </div>
     </section>
@@ -438,7 +437,6 @@ function renderCase(id) {
       <p class="case-eyebrow">${p.client}</p>
       <h1 class="case-h1">${h1Html}</h1>
       <p class="case-tagline">${p.tagline}</p>
-      <span class="case-hero-year">${p.meta.year}</span>
       <span class="case-hero-scroll">Scroll to explore</span>
     </section>
 
