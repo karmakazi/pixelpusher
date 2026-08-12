@@ -150,6 +150,7 @@ a   { text-decoration: none; }
 /* ── HERO — SHORT (all-projects) ─────────────────────── */
 .hero--short {
   min-height: 55vh;
+  padding-top: clamp(5rem, 10vh, 8rem);
   padding-bottom: clamp(3.5rem, 7vh, 6rem);
 }
 .hero--short .hero-h1 {
