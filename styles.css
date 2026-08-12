@@ -112,6 +112,41 @@ a   { text-decoration: none; }
   overflow: hidden;
 }
 
+/* ── HERO — VIDEO BACKGROUND ─────────────────────────── */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-video iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* Scale to cover regardless of viewport aspect ratio */
+  width: 100vw;
+  height: 56.25vw;   /* 16:9 */
+  min-height: 100%;
+  min-width: 177.78vh; /* 16:9 */
+  transform: translate(-50%, -50%);
+  border: 0;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 11, 9, 0.68);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Lift text above video + overlay */
+.hero-eyebrow,
+.hero-h1,
+.hero-sub    { position: relative; z-index: 2; }
+.hero-scroll,
+.hero-location { z-index: 2; } /* already position: absolute */
+
 /* ── HERO — SHORT (all-projects) ─────────────────────── */
 .hero--short {
   min-height: 55vh;

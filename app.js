@@ -193,6 +193,14 @@ function renderHome() {
   document.getElementById('app').innerHTML = `
 
     <section class="hero" id="hero">
+      <div class="hero-video">
+        <iframe
+          src="https://player.vimeo.com/video/1217666625?h=dfce6ecff5&background=1&autoplay=1&loop=1&muted=1&byline=0&title=0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="hero-overlay"></div>
       <p class="hero-eyebrow">Creative Studio \u2014 Toronto</p>
       <h1 class="hero-h1">We Do<br>Impossible</h1>
       <p class="hero-sub">Twenty-five years of campaigns, digital experiences, and brand moments that changed how people feel about the brands they love.</p>
