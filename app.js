@@ -186,7 +186,9 @@ function renderHome() {
   setMeta('Pixelpusher is a Toronto-based creative studio building campaigns, digital experiences, and brand moments for the world\u2019s most ambitious brands.');
   window.scrollTo(0, 0);
 
-  const featured = PROJECTS.filter(p => p.featured);
+  const featured = PROJECTS
+    .filter(p => p.featured)
+    .sort((a, b) => (a.featuredOrder || 99) - (b.featuredOrder || 99));
 
   document.getElementById('app').innerHTML = `
 
