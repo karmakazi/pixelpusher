@@ -114,7 +114,7 @@ function workCard(p, isHome, eager, delay) {
 
   return `
     <${tag} ${href} class="${classes}">
-      <img src="${thumbUrl(p.thumbSeed, wide)}" alt="${p.client} \u2014 ${p.title}" loading="${loading}" />
+      <img src="${p.heroImg || thumbUrl(p.thumbSeed, wide)}" alt="${p.client} \u2014 ${p.title}" loading="${loading}" />
       <div class="work-caption">
         <p class="work-client">${p.client}</p>
         <p class="work-title">${p.title}</p>
@@ -432,7 +432,7 @@ function renderCase(id) {
 
     <section class="case-hero">
       <div class="case-hero-img">
-        <img src="${heroUrl(p.heroSeed)}" alt="${p.client} \u2014 ${p.title}" />
+        <img src="${p.heroImg || heroUrl(p.heroSeed)}" alt="${p.client} \u2014 ${p.title}" />
       </div>
       <p class="case-eyebrow">${p.client}</p>
       <h1 class="case-h1">${h1Html}</h1>
