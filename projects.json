@@ -12,6 +12,7 @@
     "vimeoId": null,
     "thumbSeed": "colgate-pp",
     "heroSeed": "colgate-hero",
+    "heroImg": "img/colgate-hero.png",
     "tagline": "The campaign that dared a century-old brand to tell the truth.",
     "pullQuote": "What if the most powerful thing Colgate could say was: we\u2019re not perfect \u2014 and neither are you.",
     "copy": [
@@ -48,6 +49,7 @@
     "vimeoId": null,
     "thumbSeed": "cadillac-pp",
     "heroSeed": "cadillac-hero",
+    "heroImg": "img/cadillac-iconic-hero.png",
     "tagline": "Reclaiming the word iconic for the brand that invented it.",
     "pullQuote": "Luxury isn\u2019t inherited. It\u2019s earned \u2014 one statement at a time.",
     "copy": [
@@ -83,6 +85,7 @@
     "vimeoId": null,
     "thumbSeed": "912-nyc",
     "heroSeed": null,
+    "heroImg": "img/9-12-hero.png",
     "tagline": null,
     "pullQuote": null,
     "copy": [],
@@ -143,6 +146,7 @@
     "vimeoId": null,
     "thumbSeed": "rickhansen-pp",
     "heroSeed": null,
+    "heroImg": "img/hansen-hero.png",
     "tagline": null,
     "pullQuote": null,
     "copy": [],
@@ -164,6 +168,7 @@
     "vimeoId": null,
     "thumbSeed": "gatorade-pp",
     "heroSeed": "gatorade-hero",
+    "heroImg": "img/gatorade-hero.png",
     "tagline": "We turned the science of sweat into something nobody had ever seen.",
     "pullQuote": "Sweat is honest. It doesn\u2019t lie about effort.",
     "copy": [
@@ -200,6 +205,7 @@
     "vimeoId": null,
     "thumbSeed": "adidas-pp",
     "heroSeed": "adidas-hero",
+    "heroImg": "img/adidas-hero.png",
     "tagline": "When culture shows up, you don\u2019t just show up \u2014 you show out.",
     "pullQuote": "We didn\u2019t build a booth. We built a moment.",
     "copy": [
@@ -235,6 +241,7 @@
     "vimeoId": null,
     "thumbSeed": "cadillac-xt4",
     "heroSeed": null,
+    "heroImg": "img/cadillac-XT4-hero.png",
     "tagline": null,
     "pullQuote": null,
     "copy": [],
@@ -256,6 +263,7 @@
     "vimeoId": null,
     "thumbSeed": "shiseido-pp",
     "heroSeed": "shiseido-hero",
+    "heroImg": "img/nuit-blanche-hero.png",
     "tagline": "An all-night art festival became the world\u2019s most beautiful skincare ad.",
     "pullQuote": "Beauty isn\u2019t a product. It\u2019s what happens when art touches science.",
     "copy": [
@@ -332,6 +340,7 @@
     "vimeoId": null,
     "thumbSeed": "ford-pp",
     "heroSeed": "ford-hero",
+    "heroImg": "img/go-further-hero.png",
     "tagline": "A truck brand with a bigger idea: you can always go further.",
     "pullQuote": "Canadians don\u2019t want to be sold to. They want to be challenged.",
     "copy": [
