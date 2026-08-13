@@ -35,7 +35,8 @@ body {
 }
 
 img { display: block; width: 100%; }
-a   { text-decoration: none; }
+a   { text-decoration: none; cursor: none; }
+*, *:hover { cursor: none !important; }
 
 /* ── CUSTOM CURSOR ───────────────────────────────────── */
 .cursor {
