@@ -42,6 +42,7 @@ window.addEventListener('scroll', () => {
 
 // ── ROUTER ────────────────────────────────────────────────
 window.addEventListener('hashchange', route);
+window.addEventListener('resize', () => { if (currentView === 'case') fitTitle(); });
 
 function route() {
   if (!PROJECTS.length) return;
@@ -446,8 +447,8 @@ function renderCase(id) {
         <p class="case-meta-value">${p.meta.client}</p>
       </div>
       <div>
-        <p class="case-meta-label">Year</p>
-        <p class="case-meta-value">${p.meta.year}</p>
+        <p class="case-meta-label">Agency</p>
+        <p class="case-meta-value">${p.meta.agency || '\u2014'}</p>
       </div>
       <div>
         <p class="case-meta-label">Services</p>
@@ -475,6 +476,20 @@ function renderCase(id) {
   `;
 
   initReveal();
+  fitTitle();
+}
+
+// ── FIT TITLE ─────────────────────────────────────────────
+// Scales .case-h1 down until no single word overflows the container.
+function fitTitle() {
+  const h1 = document.querySelector('.case-h1');
+  if (!h1) return;
+  h1.style.fontSize = '';
+  let fs = parseFloat(window.getComputedStyle(h1).fontSize);
+  while (h1.scrollWidth > h1.clientWidth && fs > 20) {
+    fs--;
+    h1.style.fontSize = fs + 'px';
+  }
 }
 
 // ── UTILITY ───────────────────────────────────────────────
