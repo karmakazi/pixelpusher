@@ -42,7 +42,7 @@ window.addEventListener('scroll', () => {
 
 // ── ROUTER ────────────────────────────────────────────────
 window.addEventListener('hashchange', route);
-window.addEventListener('resize', () => { if (currentView === 'case') fitTitle(); });
+window.addEventListener('resize', () => { if (currentView && currentView.startsWith('case')) fitTitle(); });
 
 function route() {
   if (!PROJECTS.length) return;
@@ -228,11 +228,26 @@ function renderHome() {
       <div class="r d2">
         <p class="service-copy">We design digital products people actually want to use. From the first interaction to the last, we map every moment of friction, every point of delight, and build experiences that feel inevitable \u2014 like they couldn\u2019t have been made any other way.</p>
         <ul class="caps">
-          <li>UX Research &amp; Strategy</li>
-          <li>Information Architecture</li>
-          <li>Interaction Design</li>
-          <li>Prototyping &amp; Testing</li>
-          <li>Design Systems</li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>UX Research &amp; Strategy</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">We start by understanding people before we start designing for them. Interviews, usability tests, and analytics \u2014 we dig until we know what actually matters.</div></div>
+          </li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>Information Architecture</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">Every piece of content has a home. We build the structures that make complex information feel effortless to navigate.</div></div>
+          </li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>Interaction Design</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">The details that make digital feel physical. Micro-interactions, transitions, and feedback states that turn using software into a pleasure.</div></div>
+          </li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>Prototyping &amp; Testing</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">We build to learn. Rapid prototypes put real ideas in front of real people before a single line of production code is written.</div></div>
+          </li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>Design Systems</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">Consistency at scale. A single source of truth for every component, pattern, and decision across your entire product.</div></div>
+          </li>
         </ul>
       </div>
     </section>
@@ -245,11 +260,26 @@ function renderHome() {
       <div class="r d2">
         <p class="service-copy">Code is craft. We build what others say can\u2019t be built \u2014 performant, accessible, and obsessively detailed. Whether it\u2019s a marketing site or a custom interactive platform, we write the kind of code that holds up five years from now.</p>
         <ul class="caps">
-          <li>Web &amp; Application Development</li>
-          <li>Custom CMS Integration</li>
-          <li>API &amp; Backend Engineering</li>
-          <li>Performance Optimization</li>
-          <li>QA &amp; Launch Support</li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>Web &amp; Application Development</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">From marketing sites to complex web apps, we build with modern standards \u2014 fast, accessible, and designed to last.</div></div>
+          </li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>Custom CMS Integration</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">Content management that fits the way your team actually works. We make Sanity, Contentful, and Prismic feel completely native to your product.</div></div>
+          </li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>API &amp; Backend Engineering</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">The invisible architecture that makes everything run. Scalable, secure, and designed for the demands of modern digital products.</div></div>
+          </li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>Performance Optimization</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">Speed is a feature. We audit, refactor, and optimize until your product loads fast on any device, anywhere in the world.</div></div>
+          </li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>QA &amp; Launch Support</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">Nothing ships without our sign-off. We test across devices, browsers, and edge cases so launch day is a celebration, not a crisis.</div></div>
+          </li>
         </ul>
       </div>
     </section>
@@ -262,11 +292,26 @@ function renderHome() {
       <div class="r d2">
         <p class="service-copy">The best brand moments don\u2019t live on a screen \u2014 they happen in the world and get shared everywhere else. We design physical-digital experiences that put people inside the story, from concept through build to the last social post.</p>
         <ul class="caps">
-          <li>Experiential Concept &amp; Design</li>
-          <li>Interactive Installations</li>
-          <li>Event Technology</li>
-          <li>Content Capture &amp; Distribution</li>
-          <li>Live Production Support</li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>Experiential Concept &amp; Design</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">The big idea that makes people stop, stay, and share. We concept experiences that are genuinely worth showing up for.</div></div>
+          </li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>Interactive Installations</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">Physical technology that responds to people in real time \u2014 touch, motion, sound, and light, orchestrated into a single unforgettable moment.</div></div>
+          </li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>Event Technology</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">The infrastructure behind the magic. Custom software, hardware integration, and tech production that runs flawlessly under pressure.</div></div>
+          </li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>Content Capture &amp; Distribution</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">Every activation is a content opportunity. We plan the capture strategy before the doors open so nothing great goes unrecorded.</div></div>
+          </li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>Live Production Support</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">On the ground, on the day. Our team manages every technical aspect of your activation from load-in to strike.</div></div>
+          </li>
         </ul>
       </div>
     </section>
@@ -279,10 +324,22 @@ function renderHome() {
       <div class="r d2">
         <p class="service-copy">AI isn\u2019t a trend we\u2019re chasing \u2014 it\u2019s a tool we\u2019ve been building with. We use it to accelerate creative, personalize experiences at scale, and solve problems that used to require ten times the budget and twice the time.</p>
         <ul class="caps">
-          <li>Generative Creative Production</li>
-          <li>AI-Powered Personalization</li>
-          <li>Conversational Interfaces</li>
-          <li>Workflow Automation</li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>Generative Creative Production</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">AI that accelerates without homogenizing. We use generative tools to push creative volume and variation while keeping the work unmistakably yours.</div></div>
+          </li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>AI-Powered Personalization</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">Experiences that adapt in real time to who is experiencing them. Relevance at a scale no human team could manage alone.</div></div>
+          </li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>Conversational Interfaces</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">Chatbots built to actually be useful \u2014 trained on your brand voice, connected to your data, and designed for real conversations.</div></div>
+          </li>
+          <li class="cap-item">
+            <button class="cap-btn"><span>Workflow Automation</span><span class="cap-icon">+</span></button>
+            <div class="cap-body"><div class="cap-inner">The repetitive work that drains your team? We automate it \u2014 briefing, resizing, reporting, scheduling \u2014 so people can focus on what only people can do.</div></div>
+          </li>
         </ul>
       </div>
     </section>
@@ -326,6 +383,20 @@ function renderHome() {
   `;
 
   initReveal();
+  initCaps();
+}
+
+// ── CAPS EXPAND ───────────────────────────────────────────
+function initCaps() {
+  document.querySelectorAll('.cap-item').forEach(item => {
+    const btn = item.querySelector('.cap-btn');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      item.closest('.caps').querySelectorAll('.cap-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
 }
 
 // ── RENDER: ALL PROJECTS ──────────────────────────────────
@@ -371,13 +442,26 @@ function renderCase(id) {
   // Build gallery blocks
   const galleryBlocks = [];
   const imgs = p.gallery;
+  let videoInserted = false;
   for (let i = 0; i < imgs.length; i++) {
     const g = imgs[i];
     if (g.wide) {
-      galleryBlocks.push(`
+      if (!videoInserted && p.vimeoId) {
+        videoInserted = true;
+        galleryBlocks.push(`
+      <div class="case-gallery-wide case-gallery-video r" data-vimeo="${p.vimeoId}">
+        <div class="video-thumb"></div>
+        <button class="video-play" aria-label="Play video">
+          <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.5"/><polygon points="13,10 24,16 13,22" fill="rgba(255,255,255,0.9)"/></svg>
+        </button>
+        <span class="video-label">Video</span>
+      </div>`);
+      } else {
+        galleryBlocks.push(`
       <div class="case-gallery-wide r">
         <img src="${galleryUrl(g.seed, true)}" alt="${g.alt}" loading="lazy" />
       </div>`);
+      }
     } else {
       // Pair up two consecutive non-wide images
       const n = imgs[i + 1];
@@ -477,6 +561,32 @@ function renderCase(id) {
 
   initReveal();
   fitTitle();
+  initVideoBlocks();
+}
+
+// ── VIDEO BLOCKS ──────────────────────────────────────────
+function initVideoBlocks() {
+  document.querySelectorAll('.case-gallery-video').forEach(block => {
+    const id = block.dataset.vimeo;
+    const thumb = block.querySelector('.video-thumb');
+
+    // Fetch thumbnail via Vimeo oEmbed
+    fetch(`https://vimeo.com/api/oembed.json?url=https://vimeo.com/${id}`)
+      .then(r => r.json())
+      .then(data => {
+        if (data.thumbnail_url && thumb) {
+          const url = data.thumbnail_url.replace(/_\d+x\d+$/, '_1280');
+          thumb.style.backgroundImage = `url(${url})`;
+          thumb.classList.add('loaded');
+        }
+      })
+      .catch(() => {});
+
+    // Click to swap in the live player
+    block.addEventListener('click', () => {
+      block.innerHTML = `<iframe src="https://player.vimeo.com/video/${id}?autoplay=1&title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+    });
+  });
 }
 
 // ── FIT TITLE ─────────────────────────────────────────────

@@ -367,28 +367,66 @@ a   { text-decoration: none; cursor: none; }
   max-width: 44ch;
 }
 
-.caps {
-  list-style: none;
-  border-top: 1px solid currentColor;
-}
-.caps li {
-  font-size: 0.875rem;
-  letter-spacing: 0.02em;
-  padding: 0.8rem 0;
-  border-bottom: 1px solid currentColor;
-  opacity: 0.38;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: opacity 0.22s;
-}
-.caps li:hover { opacity: 0.9; cursor: default; }
-.caps li::after { content: '→'; font-size: 0.75rem; opacity: 0.7; }
-
 .service--cream    { background: var(--cream-1); color: var(--dark-2); }
 .service--ecru     { background: var(--cream-2); color: var(--dark-2); }
 .service--warm     { background: var(--cream-3); color: var(--dark-2); }
 .service--charcoal { background: var(--dark-2);  color: var(--off-white); }
+
+/* ── CAPS — EXPANDABLE LIST ───────────────────────────── */
+.caps {
+  list-style: none;
+  border-top: 1px solid currentColor;
+  max-width: 44ch;
+}
+
+.cap-item {
+  border-bottom: 1px solid currentColor;
+}
+
+.cap-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.8rem 0;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: none;
+  text-align: left;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  opacity: 0.38;
+  transition: opacity 0.22s;
+}
+.cap-item:hover .cap-btn,
+.cap-item.open  .cap-btn { opacity: 0.9; }
+
+.cap-icon {
+  font-size: 1rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-left: 1rem;
+  transition: transform 0.35s cubic-bezier(0.16,1,0.3,1);
+}
+.cap-item.open .cap-icon { transform: rotate(45deg); }
+
+.cap-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.45s cubic-bezier(0.16,1,0.3,1);
+}
+.cap-item.open .cap-body { grid-template-rows: 1fr; }
+
+.cap-inner {
+  overflow: hidden;
+  font-size: 0.8rem;
+  line-height: 1.7;
+  opacity: 0.6;
+  padding-bottom: 0;
+  transition: padding-bottom 0.45s cubic-bezier(0.16,1,0.3,1);
+}
+.cap-item.open .cap-inner { padding-bottom: 0.9rem; }
 
 /* ── ABOUT ────────────────────────────────────────────── */
 .about {
@@ -706,6 +744,63 @@ footer a:hover { color: var(--off-white); }
 .case-gallery-half:hover img {
   transform: scale(1.03);
   filter: brightness(1) saturate(1);
+}
+
+/* ── CASE STUDY — VIDEO BLOCK ─────────────────────────── */
+.case-gallery-video {
+  aspect-ratio: 16 / 9;
+  position: relative;
+  cursor: none;
+  background: var(--dark-2);
+}
+.video-thumb {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.4s ease;
+}
+.video-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.video-play svg {
+  width: 4rem;
+  height: 4rem;
+  opacity: 0.75;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.case-gallery-video:hover .video-play svg {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.video-label {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.25rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  z-index: 2;
+  pointer-events: none;
+}
+.case-gallery-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* ── CASE STUDY — NEXT PROJECT ────────────────────────── */
