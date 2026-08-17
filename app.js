@@ -452,9 +452,11 @@ function renderCase(id) {
       <div class="case-gallery-wide case-gallery-video r" data-vimeo="${p.vimeoId}">
         <div class="video-thumb"></div>
         <button class="video-play" aria-label="Play video">
-          <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.5"/><polygon points="13,10 24,16 13,22" fill="rgba(255,255,255,0.9)"/></svg>
+          <span class="play-ring">
+            <svg viewBox="0 0 40 40"><polygon points="14,10 32,20 14,30" fill="white"/></svg>
+          </span>
+          <span class="play-label">Play</span>
         </button>
-        <span class="video-label">Video</span>
       </div>`);
       } else {
         galleryBlocks.push(`
@@ -575,7 +577,9 @@ function initVideoBlocks() {
       .then(r => r.json())
       .then(data => {
         if (data.thumbnail_url && thumb) {
-          const url = data.thumbnail_url.replace(/_\d+x\d+$/, '_1280');
+          const url = data.thumbnail_url
+            .split('?')[0]
+            .replace(/(-d_|_)\d+x\d+(\.\w+)?$/, '$11280x720$2');
           thumb.style.backgroundImage = `url(${url})`;
           thumb.classList.add('loaded');
         }
@@ -585,6 +589,23 @@ function initVideoBlocks() {
     // Click to swap in the live player
     block.addEventListener('click', () => {
       block.innerHTML = `<iframe src="https://player.vimeo.com/video/${id}?autoplay=1&title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+      block.classList.add('playing');
+      // Hide cursor immediately — iframe steals all mouse events from here
+      document.getElementById('cur').style.opacity = '0';
+    });
+
+    // Restore cursor when mouse leaves the video block
+    block.addEventListener('mouseleave', () => {
+      if (block.classList.contains('playing')) {
+        document.getElementById('cur').style.opacity = '1';
+      }
+    });
+
+    // Re-hide cursor if mouse re-enters a playing block
+    block.addEventListener('mouseenter', () => {
+      if (block.classList.contains('playing')) {
+        document.getElementById('cur').style.opacity = '0';
+      }
     });
   });
 }
