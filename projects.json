@@ -13,25 +13,25 @@
     "thumbSeed": "colgate-pp",
     "heroSeed": "colgate-hero",
     "heroImg": "img/colgate-hero.png",
-    "tagline": "The campaign that dared a century-old brand to tell the truth.",
-    "pullQuote": "What if the most powerful thing Colgate could say was: we\u2019re not perfect \u2014 and neither are you.",
+    "tagline": "We built a confession booth that made a century-old brand feel radically honest.",
+    "pullQuote": "Everyone has a dental secret. We just gave them a place to confess it \u2014 live, on camera, in the Flatiron District.",
     "copy": [
-      "For too long, oral care advertising had shown us impossibly white smiles in impossibly pristine settings. We pitched something radical: show real teeth, in real moments, belonging to real people. Totally Honest launched across digital, OOH, and broadcast \u2014 and immediately became the most-talked-about oral care campaign of the year.",
-      "Three months in, product sales grew 18% year-over-year. Social engagement outpaced category benchmarks by 4\u00d7. But more than the numbers, Colgate had done something it hadn\u2019t done in decades \u2014 it had made people feel something."
+      "BCW challenged us to make Colgate\u2019s \u2018Totally Honest\u2019 campaign tangible. The insight was simple and uncomfortable: everyone lies to their dentist. Our answer was a custom video booth installed in New York\u2019s Flatiron District, where passersby could step inside and anonymously confess their worst dental habits \u2014 on camera. AI face tracking replaced participants\u2019 faces with the iconic Colgate dot while an animated smile mirrored their mouth movements in real time.",
+      "The result was something between a confessional and a comedy set \u2014 authentic, disarming, and completely on-brand. Content from the activation seeded across digital and social, turning New York\u2019s honesty into Colgate\u2019s most shareable campaign in years."
     ],
     "gallery": [
-      { "wide": true,  "seed": "colgate-wide1", "alt": "Totally Honest campaign visual" },
-      { "wide": false, "seed": "colgate-a",     "alt": "Campaign detail" },
-      { "wide": false, "seed": "colgate-b",     "alt": "Campaign detail" },
-      { "wide": true,  "seed": "colgate-wide2", "alt": "OOH execution" }
+      { "wide": true,  "seed": "colgate-wide1", "alt": "Totally Honest booth installation" },
+      { "wide": false, "seed": "colgate-a",     "alt": "AI face tracking detail" },
+      { "wide": false, "seed": "colgate-b",     "alt": "Participant moment" },
+      { "wide": true,  "seed": "colgate-wide2", "alt": "Flatiron District activation" }
     ],
     "meta": {
-      "year": "2023",
+      "year": "2024",
       "client": "Colgate-Palmolive",
-      "services": ["Campaign Strategy", "TV &amp; Digital", "Social &amp; Influencer"],
+      "services": ["Experiential Design", "Interactive Technology", "Content Production"],
       "industry": "Consumer Goods",
-      "agency": null,
-      "productionCo": null
+      "agency": "BCW",
+      "productionCo": "The Deli"
     },
     "nextProject": "cadillac-be-iconic",
     "comingSoon": false
@@ -50,25 +50,25 @@
     "thumbSeed": "cadillac-pp",
     "heroSeed": "cadillac-hero",
     "heroImg": "img/cadillac-iconic-hero.png",
-    "tagline": "Reclaiming the word iconic for the brand that invented it.",
-    "pullQuote": "Luxury isn\u2019t inherited. It\u2019s earned \u2014 one statement at a time.",
+    "tagline": "We put people inside the future of driving \u2014 before the car even existed.",
+    "pullQuote": "The path you just drove? You drew it. Your signature created the world.",
     "copy": [
-      "Cadillac had a legacy problem: everyone knew the name, but nobody under 45 cared. Our brief was to make Cadillac feel inevitable again \u2014 not through nostalgia, but through sheer presence. Be Iconic was a statement of intent as much as an advertising campaign, built around film, digital, and a refreshed brand voice sharp enough to cut through an increasingly crowded luxury market.",
-      "Launched with a 90-second brand film and an integrated digital campaign across Canada and the US, Be Iconic drove a 23% increase in brand consideration among 35\u201349 year-old luxury car shoppers. The film went on to be shortlisted at Cannes Lions."
+      "Momentum tapped us to build the centrepiece of Cadillac\u2019s national Lyric roadshow \u2014 an immersive experience that would let Canadians feel what it means to drive an electric vehicle that doesn\u2019t exist yet. Using Unreal Engine 5, we rendered stunning real-time environments projected across the Lyric\u2019s windscreen, pulling visitors through cities and landscapes that felt visceral and alive. The experience began with something deceptively simple: signing your name on an iPad.",
+      "That signature became the road you travelled \u2014 rendered as a glowing path through the virtual world, revealed in a final dramatic pull-back as the journey ended. The message landed without a single line of ad copy: this car isn\u2019t just a vehicle. It\u2019s an extension of you. The roadshow ran at locations across Canada throughout the summer, drawing lines at every stop."
     ],
     "gallery": [
-      { "wide": true,  "seed": "cadillac-wide1", "alt": "Be Iconic campaign visual" },
-      { "wide": false, "seed": "cadillac-a",     "alt": "Campaign detail" },
-      { "wide": false, "seed": "cadillac-b",     "alt": "Campaign detail" },
-      { "wide": true,  "seed": "cadillac-wide2", "alt": "Digital execution" }
+      { "wide": true,  "seed": "cadillac-wide1", "alt": "Cadillac Lyric Roadshow experience" },
+      { "wide": false, "seed": "cadillac-a",     "alt": "Unreal Engine 5 environment" },
+      { "wide": false, "seed": "cadillac-b",     "alt": "Signature reveal moment" },
+      { "wide": true,  "seed": "cadillac-wide2", "alt": "Roadshow activation" }
     ],
     "meta": {
-      "year": "2022",
+      "year": "2023",
       "client": "Cadillac Canada",
-      "services": ["Brand Identity", "Campaign Development", "Digital"],
+      "services": ["Interactive Experience", "Real-Time 3D", "Experiential Design"],
       "industry": "Automotive",
-      "agency": null,
-      "productionCo": null
+      "agency": "Momentum",
+      "productionCo": "Makers"
     },
     "nextProject": "gatorade-sweat-machine",
     "comingSoon": false
@@ -86,24 +86,24 @@
     "thumbSeed": "912-nyc",
     "heroSeed": "912-nyc-hero",
     "heroImg": "img/9-12-hero.png",
-    "tagline": "Twenty years later, a city needed to remember together — not alone.",
-    "pullQuote": "The most powerful memorial isn\u2019t built in stone. It\u2019s built in the spaces between people.",
+    "tagline": "The story of September 12th, told through text messages \u2014 exactly as it happened, twenty years later.",
+    "pullQuote": "In 2001 the most innovative way to communicate was a text message. In 2021 it\u2019s the most personal.",
     "copy": [
-      "In the weeks leading up to the twentieth anniversary of September 11th, we were briefed on something quietly ambitious: build a digital experience that would help people reconnect on September 12th \u2014 the day after. Not a day of grief, but the day ordinary New Yorkers turned to each other.",
-      "We created an interactive platform where users could share a memory, a message, or a moment of quiet with a stranger across the city. Over 400,000 people participated across 72 hours. The experience was featured in The New York Times and recognized by the International Emmy Foundation for its impact."
+      "Unit 9 brought us the brief of a lifetime: tell the untold story of the Verizon employees who kept New York connected in the days after September 11th \u2014 and tell it in a format nobody had used before. The medium was the message: text messages. We interviewed over 30 Verizon employees from that week, built a precise timeline, and delivered 11 personal stories to participants on September 12th, 2021 \u2014 at the exact times the events had occurred twenty years earlier. Each text unlocked immersive phone call reenactments, 360\u00b0 interactive maps of downtown Manhattan, and AR before-and-after filters of the structural damage to Verizon\u2019s headquarters.",
+      "Behind the scenes, we used Twilio-driven SMS to simultaneously push high-volume multimedia content to thousands of participants in real time \u2014 a technical challenge that had never been attempted at this scale. The project won the Cannes Gold Lion, One Show Gold Pencil, Clio Gold, and Webby Award."
     ],
     "gallery": [
-      { "wide": true,  "seed": "912-wide1", "alt": "Reconnecting New York digital platform" },
-      { "wide": false, "seed": "912-a",     "alt": "Campaign detail" },
-      { "wide": false, "seed": "912-b",     "alt": "User interface" },
-      { "wide": true,  "seed": "912-wide2", "alt": "Campaign reach" }
+      { "wide": true,  "seed": "912-wide1", "alt": "9/12 SMS documentary experience" },
+      { "wide": false, "seed": "912-a",     "alt": "Text message interface" },
+      { "wide": false, "seed": "912-b",     "alt": "360\u00b0 Manhattan map" },
+      { "wide": true,  "seed": "912-wide2", "alt": "AR before-and-after filter" }
     ],
     "meta": {
       "year": "2021",
-      "client": "9/12 Foundation",
-      "services": ["Campaign Strategy", "Digital Experience", "Social"],
-      "industry": "Non-Profit",
-      "agency": null,
+      "client": "Verizon",
+      "services": ["Interactive Documentary", "SMS Technology", "AR &amp; WebGL"],
+      "industry": "Telecommunications",
+      "agency": "Unit 9",
       "productionCo": null
     },
     "nextProject": "rick-hansen-poster-for-everyone",
@@ -122,22 +122,22 @@
     "thumbSeed": "websites-pp",
     "heroSeed": "websites-hero",
     "heroImg": null,
-    "tagline": "Screens that move people. Sites that do things no site has done before.",
-    "pullQuote": "Every pixel is a decision. Every decision is a chance to do something no one has seen yet.",
+    "tagline": "Fast, stable, and built to last \u2014 websites that work as hard as the brands behind them.",
+    "pullQuote": "The best website is the one nobody notices. They just feel like the brand finally makes sense.",
     "copy": [
-      "Across twenty-five years we\u2019ve built websites for some of the world\u2019s most demanding brands \u2014 launches that had to be perfect on day one, platforms built to handle millions of visitors, and experiences designed to shift how people feel about a product before they ever touch it. This is a selection of recent work that doesn\u2019t fit neatly into a single campaign or category.",
-      "From luxury automotive configurators to non-profit advocacy platforms, from e-commerce flagships to interactive brand worlds, our digital work is defined by one principle: the technology should be invisible. What the visitor feels is all that matters."
+      "IBC needed a complete rebuild of an architecture that had grown unwieldy from years of constant updates. We restructured their content and rebuilt on StoryBlok headless CMS, making it intuitive for the team to manage and for visitors to navigate. H&amp;R Block\u2019s WordPress site was crashing every tax season under peak traffic load \u2014 we moved them to a static generator with CraftCMS, and it hasn\u2019t gone down since. For Karis, a rebrand and repositioning called for a new site that could flex with an evolving identity \u2014 we delivered it on StoryBlok with the flexibility they needed.",
+      "Three different organizations, three different problems, one consistent principle: the platform should disappear and the brand should speak. These are a few of the sites we\u2019ve built recently that do exactly that."
     ],
     "gallery": [
-      { "wide": true,  "seed": "web-wide1", "alt": "Digital experience showcase" },
-      { "wide": false, "seed": "web-a",     "alt": "Web project detail" },
-      { "wide": false, "seed": "web-b",     "alt": "Interface design" },
-      { "wide": true,  "seed": "web-wide2", "alt": "Mobile experience" }
+      { "wide": true,  "seed": "web-wide1", "alt": "IBC website redesign" },
+      { "wide": false, "seed": "web-a",     "alt": "H&amp;R Block site" },
+      { "wide": false, "seed": "web-b",     "alt": "Karis website" },
+      { "wide": true,  "seed": "web-wide2", "alt": "Interface design detail" }
     ],
     "meta": {
       "year": "2024",
-      "client": "Various",
-      "services": ["UX &amp; Design", "Web Development", "Digital Strategy"],
+      "client": "IBC, H&amp;R Block, Karis",
+      "services": ["UX &amp; Design", "Web Development", "Headless CMS"],
       "industry": "Various",
       "agency": null,
       "productionCo": null
@@ -158,24 +158,24 @@
     "thumbSeed": "bedtime-pp",
     "heroSeed": "bedtime-hero",
     "heroImg": null,
-    "tagline": "We gave grassroots advocates a voice loud enough to reach Parliament Hill.",
-    "pullQuote": "Real change doesn\u2019t start with policy. It starts with a story someone can\u2019t stop thinking about.",
+    "tagline": "We built an AR app that let incarcerated fathers read their children to sleep.",
+    "pullQuote": "All the child has to do is point the camera at the page. The rest is magic.",
     "copy": [
-      "Bedtime Stories for Social Change is a Canadian non-profit that uses narrative \u2014 film, audio, and illustrated storytelling \u2014 to drive awareness and advocacy around issues that traditional campaigns can\u2019t crack. They came to us to help amplify their content, build a digital presence that matched the power of their stories, and launch a fundraising campaign that felt as human as the work itself.",
-      "Over six months, we redesigned their digital platform, produced a content series featuring advocates from across the country, and ran a social campaign that drove a 210% increase in monthly donors. The work was recognized at the Canadian Marketing Awards and became a case study in purpose-driven digital strategy."
+      "FCB Chicago came to us with something extraordinary: a brief to keep families connected across prison walls. Bedtime Stories is an augmented reality app designed for US inmates \u2014 specifically fathers \u2014 that lets them read bedtime stories to their children as if they were there in person. A child holds a phone over a printed book page, and their father\u2019s recorded voice fills the room while his presence fills the screen. The technology had to work in the hands of a child, without WiFi, without complexity.",
+      "We built it with sixty of the most beloved children\u2019s books in the library, with plans to grow. The response was immediate. The project won the One Show Gold Cube, Cannes Silver Lion, Clio Gold, and ADCC Gold \u2014 some of the most decorated work of the year."
     ],
     "gallery": [
-      { "wide": true,  "seed": "bedtime-wide1", "alt": "Social Change campaign" },
-      { "wide": false, "seed": "bedtime-a",     "alt": "Campaign still" },
-      { "wide": false, "seed": "bedtime-b",     "alt": "Content series" },
-      { "wide": true,  "seed": "bedtime-wide2", "alt": "Digital platform" }
+      { "wide": true,  "seed": "bedtime-wide1", "alt": "Bedtime Stories AR app" },
+      { "wide": false, "seed": "bedtime-a",     "alt": "App in use" },
+      { "wide": false, "seed": "bedtime-b",     "alt": "AR book experience" },
+      { "wide": true,  "seed": "bedtime-wide2", "alt": "Campaign reach" }
     ],
     "meta": {
-      "year": "2022",
-      "client": "Bedtime Stories for Social Change",
-      "services": ["Brand Strategy", "Content Production", "Social Campaign"],
+      "year": "2021",
+      "client": "Chicago Public Library",
+      "services": ["AR Development", "App Design", "Interactive Experience"],
       "industry": "Non-Profit",
-      "agency": null,
+      "agency": "FCB Chicago",
       "productionCo": null
     },
     "nextProject": "cadillac-xt4",
@@ -194,24 +194,24 @@
     "thumbSeed": "rickhansen-pp",
     "heroSeed": "hansen-hero",
     "heroImg": "img/hansen-hero.png",
-    "tagline": "Accessibility isn\u2019t a feature. It\u2019s the whole point.",
-    "pullQuote": "Art has always been for everyone. We just needed to make the poster catch up.",
+    "tagline": "A poster that reads the room \u2014 and rearranges itself for whoever is standing in front of it.",
+    "pullQuote": "Accessibility isn\u2019t a feature you add at the end. It\u2019s the whole idea.",
     "copy": [
-      "The Rick Hansen Foundation has spent decades advocating for a world without barriers. When they wanted to bring that message to a new generation, they came to us with a brief about public art \u2014 specifically, how to make iconic Canadian imagery fully accessible to people with visual impairments. Poster for Everyone combined tactile printing, audio descriptions, and an AR layer so that every person, regardless of ability, could experience the same cultural moment.",
-      "Deployed in transit stations, galleries, and schools across Canada, the campaign generated national media coverage and became one of the most-shared RHF campaigns in their history. The accessible poster format was subsequently adopted by three provincial arts councils as a permanent standard."
+      "TAXI and the Rick Hansen Foundation gave us a challenge with no precedent: build a poster that changes for the person looking at it. Using a Microsoft Kinect sensor, the installation detects the viewer\u2019s height and distance in real time \u2014 adjusting font size and layout to accommodate someone in a wheelchair, someone with low vision, or a child. Nobody sees the same poster twice. We also built in ambient language detection: it listens for the language being spoken nearby and changes its display accordingly.",
+      "What started as a prototype for an RHF campaign became a proof of concept for a different kind of public communication \u2014 one where the message adapts to the audience instead of demanding the audience adapt to the message. The project earned a One Show Merit and a Strategy Magazine Silver."
     ],
     "gallery": [
       { "wide": true,  "seed": "hansen-wide1", "alt": "Poster for Everyone installation" },
-      { "wide": false, "seed": "hansen-a",     "alt": "Tactile poster detail" },
-      { "wide": false, "seed": "hansen-b",     "alt": "AR experience" },
-      { "wide": true,  "seed": "hansen-wide2", "alt": "Transit installation" }
+      { "wide": false, "seed": "hansen-a",     "alt": "Kinect sensor tracking" },
+      { "wide": false, "seed": "hansen-b",     "alt": "Adaptive layout detail" },
+      { "wide": true,  "seed": "hansen-wide2", "alt": "Public installation" }
     ],
     "meta": {
-      "year": "2022",
+      "year": "2019",
       "client": "Rick Hansen Foundation",
-      "services": ["Campaign Strategy", "Accessible Design", "Digital &amp; AR"],
+      "services": ["Interactive Installation", "Sensor Technology", "Accessible Design"],
       "industry": "Non-Profit",
-      "agency": null,
+      "agency": "TAXI",
       "productionCo": null
     },
     "nextProject": "bedtime-stories-social-change",
@@ -231,24 +231,24 @@
     "thumbSeed": "gatorade-pp",
     "heroSeed": "gatorade-hero",
     "heroImg": "img/gatorade-hero.png",
-    "tagline": "We turned the science of sweat into something nobody had ever seen.",
-    "pullQuote": "Sweat is honest. It doesn\u2019t lie about effort.",
+    "tagline": "Free Gatorade. But you have to earn it.",
+    "pullQuote": "The machine knows if you\u2019ve worked for it. Your heart rate doesn\u2019t lie.",
     "copy": [
-      "Gatorade wanted to own the conversation around athletic performance \u2014 not just refreshment. Sweat Machine was an interactive digital platform and physical installation that transformed real-time athlete data (heart rate, temperature, sweat output) into generative visual art. Every athlete became their own masterpiece.",
-      "Launched at Toronto\u2019s Harbourfront Centre during the Pan Am Games, Sweat Machine drew over 12,000 visitors in four days and generated 40M+ social impressions. The digital platform ran for six months and became a permanent fixture of Gatorade\u2019s D2C strategy."
+      "TBWA Toronto came to us with the best kind of brief: make people prove they deserve a free Gatorade. We built a custom vending machine equipped with a pulse sensor that measured the user\u2019s heart rate on contact. Heart rate over 120 BPM \u2014 clear evidence of real effort \u2014 and the machine dispensed a free bottle. Anything less, nothing.",
+      "The Sweat Machine turned a product sample into a challenge, and people rose to it. Crowds gathered. People did jumping jacks, sprinted in place, and egged each other on. The video spread fast \u2014 because it was exactly what the brand stands for, made physical and immediate."
     ],
     "gallery": [
-      { "wide": true,  "seed": "gatorade-wide1", "alt": "Sweat Machine installation" },
-      { "wide": false, "seed": "gatorade-a",     "alt": "Generative art output" },
-      { "wide": false, "seed": "gatorade-b",     "alt": "Athlete data visualisation" },
-      { "wide": true,  "seed": "gatorade-wide2", "alt": "Digital platform" }
+      { "wide": true,  "seed": "gatorade-wide1", "alt": "Sweat Machine vending machine" },
+      { "wide": false, "seed": "gatorade-a",     "alt": "Pulse sensor detail" },
+      { "wide": false, "seed": "gatorade-b",     "alt": "Crowd reaction" },
+      { "wide": true,  "seed": "gatorade-wide2", "alt": "Activation in action" }
     ],
     "meta": {
-      "year": "2023",
+      "year": "2016",
       "client": "Gatorade Canada",
-      "services": ["Digital Experience", "Interactive Installation", "Social Campaign"],
+      "services": ["Experiential Design", "Custom Electronics", "Interactive Installation"],
       "industry": "Sports &amp; Nutrition",
-      "agency": null,
+      "agency": "TBWA Toronto",
       "productionCo": null
     },
     "nextProject": "adidas-complexcon",
@@ -268,24 +268,24 @@
     "thumbSeed": "adidas-pp",
     "heroSeed": "adidas-hero",
     "heroImg": "img/adidas-hero.png",
-    "tagline": "When culture shows up, you don\u2019t just show up \u2014 you show out.",
-    "pullQuote": "We didn\u2019t build a booth. We built a moment.",
+    "tagline": "We levelled the playing field at the most chaotic sneaker drop on the planet.",
+    "pullQuote": "At ComplexCon, resellers always won. We built a system that made sure they couldn\u2019t.",
     "copy": [
-      "ComplexCon is where sneaker culture, streetwear, music, and art converge. For Adidas, we designed an activation that didn\u2019t feel like advertising \u2014 it felt like an event within the event. Custom architecture, a live DJ setup, an exclusive drop, and a social photo moment that drove 28K UGC posts over the weekend.",
-      "The activation was named Best Brand Experience at ComplexCon 2022 and drove a 14% lift in brand preference among 18\u201328 year-old males in the US \u2014 the most elusive demographic in the category."
+      "Jam3 brought us into one of the most technically complex activations we\u2019d ever built. At ComplexCon, limited sneaker drops are chaos \u2014 large-scale resellers scoop product the moment it hits, leaving real collectors empty-handed. Adidas wanted to fix that. We built onto the Complex app, integrating AR, Bluetooth beacons, and a network of internet-connected lockers to create a drop system where every attendee had an equal shot.",
+      "Our contribution was the backend engine: a CMS that let Adidas admins schedule and manage drops in real time \u2014 controlling locations, inventory, shoe types, and pricing \u2014 while processing payments and remotely unlocking the right lockers for the right buyers at the right moment. The system ran without a hitch across a packed convention floor. The project was covered by Engadget and won a Cannes Digital Craft Bronze Lion and two One Show Bronze Pencils."
     ],
     "gallery": [
-      { "wide": true,  "seed": "adidas-wide1", "alt": "ComplexCon activation" },
-      { "wide": false, "seed": "adidas-a",     "alt": "Activation detail" },
-      { "wide": false, "seed": "adidas-b",     "alt": "Exclusive drop moment" },
-      { "wide": true,  "seed": "adidas-wide2", "alt": "Social moments" }
+      { "wide": true,  "seed": "adidas-wide1", "alt": "ComplexCon locker system" },
+      { "wide": false, "seed": "adidas-a",     "alt": "AR drop experience" },
+      { "wide": false, "seed": "adidas-b",     "alt": "Locker unlock moment" },
+      { "wide": true,  "seed": "adidas-wide2", "alt": "Convention floor activation" }
     ],
     "meta": {
-      "year": "2022",
-      "client": "Adidas North America",
-      "services": ["Experiential Design", "Social &amp; Content", "Influencer Program"],
+      "year": "2018",
+      "client": "Adidas",
+      "services": ["App Development", "CMS &amp; Backend", "Experiential Technology"],
       "industry": "Sportswear",
-      "agency": null,
+      "agency": "Jam3",
       "productionCo": null
     },
     "nextProject": "ford-go-further",
@@ -304,24 +304,24 @@
     "thumbSeed": "cadillac-xt4",
     "heroSeed": "cadillac-xt4-hero",
     "heroImg": "img/cadillac-XT4-hero.png",
-    "tagline": "The smallest Cadillac ever built. Every inch of it, iconic.",
-    "pullQuote": "Luxury doesn\u2019t have to be large. It has to be undeniable.",
+    "tagline": "We turned the car into the controller.",
+    "pullQuote": "Touch the door. Touch the hood. The car knows.",
     "copy": [
-      "Launching a compact SUV under a brand synonymous with full-size luxury is a delicate brief. The Cadillac XT4 needed to feel premium without feeling like a compromise \u2014 and it needed to reach a buyer who had never considered Cadillac before. We built a launch campaign that leaned into the tension: small, but not lesser. Urban, but not ordinary.",
-      "The digital-first campaign ran across Canada and select US markets, anchored by a launch film that showed the XT4 navigating city environments no traditional Cadillac had ever belonged in. First-year sales exceeded forecast by 22%, with first-time Cadillac buyers accounting for 61% of XT4 purchases."
+      "Isobar and Cadillac wanted to launch the XT4 \u2014 a new, fun crossover aimed at a younger buyer \u2014 with something that matched the car\u2019s energy. We built an immersive showcase using a wraparound LED screen that filled the viewer\u2019s entire field of vision. Then we turned the car itself into an input device. Using Touch Designer, Microsoft Kinect, and Leap Motion, we mapped touch points across the XT4\u2019s exterior.",
+      "Touching the car in key areas \u2014 the door, the roof, the hood \u2014 triggered real-time interactive animations across the surrounding screens, capturing the excitement and freedom the XT4 was designed to embody. The effect was immediate: the car felt alive before anyone had driven it."
     ],
     "gallery": [
-      { "wide": true,  "seed": "xt4-wide1", "alt": "Cadillac XT4 launch campaign" },
-      { "wide": false, "seed": "xt4-a",     "alt": "Campaign visual" },
-      { "wide": false, "seed": "xt4-b",     "alt": "Urban execution" },
-      { "wide": true,  "seed": "xt4-wide2", "alt": "Digital campaign" }
+      { "wide": true,  "seed": "xt4-wide1", "alt": "Cadillac XT4 interactive showcase" },
+      { "wide": false, "seed": "xt4-a",     "alt": "Touch sensor detail" },
+      { "wide": false, "seed": "xt4-b",     "alt": "LED wraparound screen" },
+      { "wide": true,  "seed": "xt4-wide2", "alt": "Interactive animation output" }
     ],
     "meta": {
-      "year": "2020",
-      "client": "Cadillac Canada",
-      "services": ["Campaign Development", "Digital &amp; Social", "Launch Strategy"],
+      "year": "2018",
+      "client": "Cadillac",
+      "services": ["Interactive Installation", "Sensor Technology", "Real-Time Graphics"],
       "industry": "Automotive",
-      "agency": null,
+      "agency": "Isobar",
       "productionCo": null
     },
     "nextProject": "ditaliano-tenor-takeover",
@@ -341,24 +341,24 @@
     "thumbSeed": "shiseido-pp",
     "heroSeed": "shiseido-hero",
     "heroImg": "img/nuit-blanche-hero.png",
-    "tagline": "An all-night art festival became the world\u2019s most beautiful skincare ad.",
-    "pullQuote": "Beauty isn\u2019t a product. It\u2019s what happens when art touches science.",
+    "tagline": "Two and a half weeks to build one of the most ambitious installations of the year.",
+    "pullQuote": "In beauty, the face is the canvas. We built the studio around it.",
     "copy": [
-      "Nuit Blanche gave us the ultimate brief: occupy a piece of downtown Toronto for one night and make people fall in love with Shiseido\u2019s newest skincare collection. We built an immersive installation called Future Skin \u2014 a large-scale LED environment where visitors\u2019 faces were scanned and rendered in real-time as luminous, abstract portraits.",
-      "Over 8,000 people experienced Future Skin across the night. The installation was covered by Vogue, WWD, and Wallpaper*, generating 15M+ organic impressions across social. The product collection sold out within 48 hours of the campaign launch."
+      "Isobar came to us with a project that was equal parts thrilling and terrifying: build a fully immersive, tech-driven installation for Shiseido on the trading floor of the Design Exchange \u2014 for Nuit Blanche \u2014 in two and a half weeks. Using projection mapping, face tracking, gesture control, and real-time video effects, we created an experience where visitors could interact with Shiseido\u2019s four key product technologies: Dew, Gel, Powder, and Ink.",
+      "A Kinect and Leap Motion sensor array let visitors gesture through the space to control two types of projected video and ambient audio simultaneously \u2014 their face becoming the canvas, the technology an extension of their creativity. The installation ran for one night and repositioned Shiseido Ginza as a brand that doesn\u2019t just make beauty products. It makes art."
     ],
     "gallery": [
-      { "wide": true,  "seed": "shiseido-wide1", "alt": "Future Skin installation" },
-      { "wide": false, "seed": "shiseido-a",     "alt": "LED portrait rendering" },
-      { "wide": false, "seed": "shiseido-b",     "alt": "Installation detail" },
-      { "wide": true,  "seed": "shiseido-wide2", "alt": "Nuit Blanche crowd" }
+      { "wide": true,  "seed": "shiseido-wide1", "alt": "Nuit Blanche projection installation" },
+      { "wide": false, "seed": "shiseido-a",     "alt": "Gesture control detail" },
+      { "wide": false, "seed": "shiseido-b",     "alt": "Face tracking projection" },
+      { "wide": true,  "seed": "shiseido-wide2", "alt": "Design Exchange trading floor" }
     ],
     "meta": {
-      "year": "2023",
-      "client": "Shiseido Canada",
-      "services": ["Experiential Design", "Digital &amp; Social", "PR &amp; Press"],
+      "year": "2018",
+      "client": "Shiseido",
+      "services": ["Projection Mapping", "Gesture Control", "Interactive Installation"],
       "industry": "Beauty",
-      "agency": null,
+      "agency": "Isobar",
       "productionCo": null
     },
     "nextProject": "nine-twelve-reconnecting-new-york",
@@ -377,24 +377,24 @@
     "thumbSeed": "ditaliano-pp",
     "heroSeed": "ditaliano-hero",
     "heroImg": null,
-    "tagline": "We gave Canada\u2019s most beloved bread brand a voice it never knew it had.",
-    "pullQuote": "The best brand moments don\u2019t feel like advertising. They feel like something you stumbled into and can\u2019t stop smiling about.",
+    "tagline": "We put live opera singers in a YouTube masthead and let the internet write the lyrics.",
+    "pullQuote": "The internet submitted bread-related tweets. Professional tenors sang every single one.",
     "copy": [
-      "D\u2019Italiano bread has been on Canadian tables for generations. The challenge was to make it feel exciting to a younger demographic without alienating the loyal base who grew up with it. The insight: food brings people together, and nothing brings people together quite like an unexpected, joyful spectacle. Tenor Takeover surprised unsuspecting shoppers in grocery stores across Canada with operatic flash mob performances celebrating everyday mealtime moments.",
-      "The stunts were filmed and released as a multi-part social series, driving 18M organic views across YouTube and Instagram in the first month. The campaign became D\u2019Italiano\u2019s most-shared content ever and won Gold at the Marketing Awards for Best Social Campaign."
+      "Union Creative had an idea that was either brilliant or insane: take over YouTube\u2019s masthead for a day with a live stream of professional opera tenors singing tweets submitted by viewers \u2014 in real time, bread-related content only. The technical challenge was significant: simultaneously stream live performers, display incoming tweets, and broadcast everything through a YouTube masthead that had never been used this way before.",
+      "The real complexity was invisible to viewers. Every tweet needed legal consent before it could appear \u2014 without breaking the flow of the experience. We built a seamless consent and submission interface that kept users inside the moment, and a moderation dashboard that let producers queue tweets for the tenors on the fly. The event ran for one day and won Gold at the Media Innovation Awards and recognition at the Atomic Awards."
     ],
     "gallery": [
-      { "wide": true,  "seed": "ditaliano-wide1", "alt": "Tenor Takeover flash mob" },
-      { "wide": false, "seed": "ditaliano-a",     "alt": "Performance moment" },
-      { "wide": false, "seed": "ditaliano-b",     "alt": "Social content" },
-      { "wide": true,  "seed": "ditaliano-wide2", "alt": "Campaign reach" }
+      { "wide": true,  "seed": "ditaliano-wide1", "alt": "YouTube masthead takeover" },
+      { "wide": false, "seed": "ditaliano-a",     "alt": "Live tenor performance" },
+      { "wide": false, "seed": "ditaliano-b",     "alt": "Tweet submission interface" },
+      { "wide": true,  "seed": "ditaliano-wide2", "alt": "Moderation dashboard" }
     ],
     "meta": {
-      "year": "2021",
-      "client": "D\u2019Italiano Bakery",
-      "services": ["Content Production", "Social Campaign", "Experiential"],
+      "year": "2017",
+      "client": "D\u2019Italiano / Weston Foods",
+      "services": ["Live Streaming", "Interactive Platform", "Moderation Technology"],
       "industry": "Food &amp; Beverage",
-      "agency": null,
+      "agency": "Union Creative",
       "productionCo": null
     },
     "nextProject": "sport-chek-chase-the-gear",
@@ -413,24 +413,24 @@
     "thumbSeed": "sportchek-pp",
     "heroSeed": "sportchek-hero",
     "heroImg": null,
-    "tagline": "We turned gear-hunting into a city-wide game.",
-    "pullQuote": "The best retail experience isn\u2019t in the store. It\u2019s the reason you run to get there.",
+    "tagline": "We turned a Facebook Live stream into a real-life video game with hundreds of players.",
+    "pullQuote": "What started as a social media experiment became a footrace through High Park.",
     "copy": [
-      "Sport Chek needed a back-to-school campaign that would cut through the noise in a category full of performance claims and celebrity endorsements. Our idea: make the gear itself worth chasing. Chase the Gear was a city-wide scavenger hunt built on a custom mobile platform, hiding limited-edition gear drops at locations revealed through social clues, AR markers, and real-time leaderboards.",
-      "Running across six Canadian cities over three weeks, Chase the Gear drove 85,000 app downloads, 2.3M social impressions, and a 34% lift in Sport Chek app purchases during the campaign period. It became the brand\u2019s highest-performing digital activation to date."
+      "TBWA had a genuinely unhinged idea for Sport Chek: take a real Olympic hopeful, send them running through High Park, stream it live on Facebook, and challenge viewers to physically show up and catch them to win prizes. We equipped the runners with custom video streaming apps and built proprietary software to push their live feeds directly to Facebook \u2014 clean, reliable, and real-time across multiple simultaneous streams.",
+      "Nobody predicted how many people would actually show up. Hundreds of participants turned what was meant to be a social experiment into a genuine, chaotic, city-wide event \u2014 with runners dodging crowds, fans sprinting through the park, and thousands more watching it unfold on Facebook Live. It won a Clio Bronze and became a case study in how to make a brand genuinely participatory."
     ],
     "gallery": [
-      { "wide": true,  "seed": "sportchek-wide1", "alt": "Chase The Gear activation" },
-      { "wide": false, "seed": "sportchek-a",     "alt": "Mobile platform" },
-      { "wide": false, "seed": "sportchek-b",     "alt": "Gear drop moment" },
-      { "wide": true,  "seed": "sportchek-wide2", "alt": "City activation" }
+      { "wide": true,  "seed": "sportchek-wide1", "alt": "Chase The Gear High Park event" },
+      { "wide": false, "seed": "sportchek-a",     "alt": "Facebook Live stream" },
+      { "wide": false, "seed": "sportchek-b",     "alt": "Runners and crowd" },
+      { "wide": true,  "seed": "sportchek-wide2", "alt": "Streaming infrastructure" }
     ],
     "meta": {
-      "year": "2022",
+      "year": "2016",
       "client": "Sport Chek",
-      "services": ["Digital Experience", "Mobile Development", "Social Campaign"],
+      "services": ["Live Streaming", "Experiential", "Social Campaign"],
       "industry": "Retail",
-      "agency": null,
+      "agency": "TBWA",
       "productionCo": null
     },
     "nextProject": "mio-pov",
@@ -450,24 +450,24 @@
     "thumbSeed": "ford-pp",
     "heroSeed": "ford-hero",
     "heroImg": "img/go-further-hero.png",
-    "tagline": "A truck brand with a bigger idea: you can always go further.",
-    "pullQuote": "Canadians don\u2019t want to be sold to. They want to be challenged.",
+    "tagline": "We turned Ford trucks into playable video games \u2014 and kept them running for two full seasons.",
+    "pullQuote": "The steering wheel is real. The windshield is the screen. The Leafs fans loved it.",
     "copy": [
-      "Ford needed to reconnect with Canadian truck buyers who had started looking elsewhere. Our insight was simple: the truck is a tool, but what it enables is a life without limits. Go Further was less a product campaign and more a call to action \u2014 to the adventurer, the entrepreneur, the builder who never settles.",
-      "The campaign launched with a 60-second film shot across five provinces and was supported by a digital content series featuring real Canadians doing extraordinary things in their Ford trucks. Dealer visits increased 19% over the campaign period. Ford F-Series remained the best-selling vehicle in Canada for the 14th consecutive year."
+      "Bond Brand Loyalty asked us a question nobody had ever asked before: can you turn a car into a video game? Not a driving simulator \u2014 an actual, fully playable game, controlled by the vehicle itself, projected onto the windshield. We said yes. Using a modified steering wheel and accelerometer as input devices, we built a custom Unity game that lived entirely inside the Ford truck, with the windscreen as the display.",
+      "The activation ran at Scotiabank Arena for every Toronto Leafs and Raptors home game across two full seasons \u2014 a testament to how well it worked. Thousands of fans played it. Nobody had seen anything like it. Bond and Ford kept it going because the lines never stopped."
     ],
     "gallery": [
-      { "wide": true,  "seed": "ford-wide1", "alt": "Go Further campaign film" },
-      { "wide": false, "seed": "ford-a",     "alt": "Canadian landscapes" },
-      { "wide": false, "seed": "ford-b",     "alt": "Content series still" },
-      { "wide": true,  "seed": "ford-wide2", "alt": "Digital execution" }
+      { "wide": true,  "seed": "ford-wide1", "alt": "Ford Go Further game activation" },
+      { "wide": false, "seed": "ford-a",     "alt": "Windshield game display" },
+      { "wide": false, "seed": "ford-b",     "alt": "Steering wheel controller" },
+      { "wide": true,  "seed": "ford-wide2", "alt": "Scotiabank Arena installation" }
     ],
     "meta": {
-      "year": "2021",
-      "client": "Ford Motor Company Canada",
-      "services": ["Campaign Development", "Digital &amp; Content Series", "Creative Strategy"],
+      "year": "2018",
+      "client": "Ford",
+      "services": ["Game Development", "Interactive Installation", "Experiential Design"],
       "industry": "Automotive",
-      "agency": null,
+      "agency": "Bond Brand Loyalty",
       "productionCo": null
     },
     "nextProject": "shiseido-nuit-blanche",
@@ -486,24 +486,24 @@
     "thumbSeed": "mio-pp",
     "heroSeed": "mio-hero",
     "heroImg": null,
-    "tagline": "Hydration, your way. We made water personal.",
-    "pullQuote": "The product was always the point of view. We just built the world around it.",
+    "tagline": "We let music festival crowds broadcast themselves to the billboards at Dundas Square.",
+    "pullQuote": "The best way to talk to millennials at a music festival is to put them on a billboard.",
     "copy": [
-      "MiO had a product story nobody was telling right: this tiny bottle lets you flavour your water exactly how you want it, anywhere. The brief was to make personalization feel visceral rather than clinical \u2014 to show the world through the eyes of someone who refuses to accept the default. MiO POV was a first-person content platform built around athlete, artist, and creator perspectives, each one as distinctive as the flavours themselves.",
-      "Produced across eight creator partnerships and distributed natively across TikTok, Instagram, and YouTube Shorts, MiO POV drove a 44% increase in brand engagement among 18\u201334 year-olds and became the template for Kraft Heinz\u2019s creator content strategy in Canada."
+      "TAXI knew exactly where MiO\u2019s audience was: NXNE. The challenge was making a product known for personalization feel personal at scale \u2014 to thousands of people at a festival. We built a custom mobile app that let attendees stream their own point-of-view video directly to the giant billboard screens at Dundas Square, live, in real time.",
+      "To make it work without festival WiFi killing the stream, we built a private network on-site and installed custom video streaming hardware that handled real-time moderation before anything hit the screens. Every stream was reviewed before going public \u2014 without any perceptible delay. The campaign won two Promo Awards Gold and an Atomic Awards Gold."
     ],
     "gallery": [
-      { "wide": true,  "seed": "mio-wide1", "alt": "MiO POV content platform" },
-      { "wide": false, "seed": "mio-a",     "alt": "Creator content" },
-      { "wide": false, "seed": "mio-b",     "alt": "Social content" },
-      { "wide": true,  "seed": "mio-wide2", "alt": "Campaign execution" }
+      { "wide": true,  "seed": "mio-wide1", "alt": "MiO POV billboard stream" },
+      { "wide": false, "seed": "mio-a",     "alt": "NXNE festival activation" },
+      { "wide": false, "seed": "mio-b",     "alt": "Dundas Square screens" },
+      { "wide": true,  "seed": "mio-wide2", "alt": "Streaming app interface" }
     ],
     "meta": {
-      "year": "2023",
-      "client": "MiO / Kraft Heinz Canada",
-      "services": ["Content Strategy", "Creator Program", "Social &amp; Digital"],
+      "year": "2015",
+      "client": "Kraft Canada",
+      "services": ["Live Streaming", "App Development", "Experiential Technology"],
       "industry": "Food &amp; Beverage",
-      "agency": null,
+      "agency": "TAXI",
       "productionCo": null
     },
     "nextProject": "michael-hill-bachelor-experience",
@@ -522,24 +522,24 @@
     "thumbSeed": "michaelhill-pp",
     "heroSeed": "michaelhill-hero",
     "heroImg": null,
-    "tagline": "The most dramatic ring moment in television history \u2014 and we built it.",
-    "pullQuote": "When thirty million people are watching, the ring has to be perfect. Everything else can be reality TV.",
+    "tagline": "A virtual bachelor proposed to strangers in malls across Canada. Nobody saw it coming.",
+    "pullQuote": "Watch the video for the surprise ending.",
     "copy": [
-      "Michael Hill came to us with a brief that was equal parts thrilling and terrifying: design and produce the engagement ring reveal for the finale of The Bachelor Canada, live on national television. The ring would be seen by over two million viewers the night of the finale and another 30M+ through international syndication and social sharing. It needed to be flawless \u2014 and it needed to feel like Michael Hill, not like a prop.",
-      "We designed the reveal experience in collaboration with the show\u2019s production team, built a custom display environment for the final rose ceremony, and produced a behind-the-scenes content series that ran across Michael Hill\u2019s social platforms leading up to the finale. Website traffic increased 380% during the finale week, with the engagement ring selling out within 48 hours of broadcast."
+      "Launch and CityTV wanted to create a moment for The Bachelor Canada that would escape the screen and live in the real world. We built a large-scale augmented reality installation where a life-sized virtual bachelor \u2014 rendered in real time using Unity and Vuforia AR \u2014 would appear to propose to unsuspecting mall visitors across Canada.",
+      "The technology had to perform flawlessly in unpredictable retail environments: uneven floors, varying lighting, no guaranteed network. We made it work. A viral video capturing the best reactions drove massive reach beyond the installations themselves, connecting CityTV, Media Experts, and Michael Hill in a single activation that was genuinely surprising \u2014 the best kind of advertising."
     ],
     "gallery": [
-      { "wide": true,  "seed": "michaelhill-wide1", "alt": "Bachelor Experience reveal" },
-      { "wide": false, "seed": "michaelhill-a",     "alt": "Ring design detail" },
-      { "wide": false, "seed": "michaelhill-b",     "alt": "Reveal moment" },
-      { "wide": true,  "seed": "michaelhill-wide2", "alt": "Campaign content" }
+      { "wide": true,  "seed": "michaelhill-wide1", "alt": "AR bachelor installation" },
+      { "wide": false, "seed": "michaelhill-a",     "alt": "Virtual proposal moment" },
+      { "wide": false, "seed": "michaelhill-b",     "alt": "Mall activation" },
+      { "wide": true,  "seed": "michaelhill-wide2", "alt": "Visitor reaction" }
     ],
     "meta": {
-      "year": "2020",
-      "client": "Michael Hill Jewellers",
-      "services": ["Experiential Design", "Content Production", "Social Campaign"],
-      "industry": "Retail &amp; Luxury",
-      "agency": null,
+      "year": "2015",
+      "client": "CityTV / Michael Hill",
+      "services": ["AR Development", "Interactive Installation", "Experiential Design"],
+      "industry": "Entertainment &amp; Retail",
+      "agency": "Launch",
       "productionCo": null
     },
     "nextProject": "volkswagen-augmented-reality",
@@ -558,24 +558,24 @@
     "thumbSeed": "volkswagen-pp",
     "heroSeed": "volkswagen-hero",
     "heroImg": null,
-    "tagline": "We put the new Volkswagen in every driveway in Canada before a single car shipped.",
-    "pullQuote": "The future of the test drive isn\u2019t at the dealership. It\u2019s wherever you are right now.",
+    "tagline": "Large-scale augmented reality, off a billboard, in downtown Toronto. It had never been done before.",
+    "pullQuote": "The brief was to do something impossible with AR. We love briefs like that.",
     "copy": [
-      "Volkswagen was launching a new model in a market that had shifted: fewer people were walking into dealerships, and digital was doing more of the consideration work than ever before. We built an AR experience that let prospective buyers place a true-to-scale model of the new VW in their driveway, garage, or street \u2014 walk around it, open the doors, configure the colour \u2014 from their phone, before the car was even in stock.",
-      "The experience was launched through targeted digital media and a QR-enabled OOH campaign in fifteen Canadian cities. Over 120,000 Canadians placed a Volkswagen in their environment within the first six weeks. Dealer inquiry rates in AR-targeted markets were 41% higher than in control markets. The campaign was shortlisted at the One Show and became the global benchmark for VW\u2019s AR launch strategy."
+      "Red Urban gave us one of the most technically audacious briefs of our career: build an augmented reality experience that runs off the giant outdoor billboards at Dundas Square, for the launch of the Volkswagen Beetle Turbo. Large-scale outdoor AR \u2014 not on a phone screen, not in a controlled environment, but live, at street level, anchored to a massive public display \u2014 had never been attempted before.",
+      "Using String AR technology, we built an experience that let pedestrians interact with a virtual Beetle through their phones at a scale that stopped people in their tracks. Testing on-site was nearly impossible given the variables \u2014 weather, ambient light, distance \u2014 but we delivered. The Beetle launch became one of the most memorable outdoor moments in Volkswagen Canada\u2019s recent history."
     ],
     "gallery": [
-      { "wide": true,  "seed": "vw-wide1", "alt": "Volkswagen AR experience" },
-      { "wide": false, "seed": "vw-a",     "alt": "AR in-environment view" },
-      { "wide": false, "seed": "vw-b",     "alt": "Mobile interface" },
-      { "wide": true,  "seed": "vw-wide2", "alt": "OOH campaign" }
+      { "wide": true,  "seed": "vw-wide1", "alt": "Volkswagen AR Dundas Square" },
+      { "wide": false, "seed": "vw-a",     "alt": "AR Beetle on billboard" },
+      { "wide": false, "seed": "vw-b",     "alt": "Phone interaction detail" },
+      { "wide": true,  "seed": "vw-wide2", "alt": "Street-level activation" }
     ],
     "meta": {
-      "year": "2023",
+      "year": "2012",
       "client": "Volkswagen Canada",
-      "services": ["AR Development", "Digital Experience", "Campaign Strategy"],
+      "services": ["AR Development", "Large-Scale Installation", "Interactive Experience"],
       "industry": "Automotive",
-      "agency": null,
+      "agency": "Red Urban",
       "productionCo": null
     },
     "nextProject": "pixelpusher-recent-web-sites",
